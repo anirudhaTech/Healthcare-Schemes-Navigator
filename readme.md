@@ -270,6 +270,6 @@ Anirudha_healthcare_project/
 
 ## 👨‍💻 Project Developer & Contact
 
-**Developed by**: Anirudha Patil  
+**Developed by**: Anirudha sakpal
 **Project**: Final-Year Engineering / Smart India Hackathon Demonstration  
 **License**: MIT License
