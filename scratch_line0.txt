@@ -1,0 +1,2198 @@
+<USER_REQUEST>
+
+# MASTER PROMPT — HEALTHCARE SCHEMES NAVIGATOR
+
+You are an expert **Full-Stack Developer, AI/ML Engineer, UI/UX Designer, Database Architect, and Product Engineer**.
+
+Build a complete, production-quality web application called:
+
+# Healthcare Schemes Navigator
+
+The purpose of this project is to help Indian citizens discover **government healthcare schemes** that they may be eligible for based on their personal, socioeconomic, demographic, and healthcare-related information.
+
+The application should be modern, responsive, easy to use, trustworthy, and suitable for a **final-year AI/ML engineering project and hackathon/SIH-style demonstration**.
+
+Do NOT create only a frontend mockup.
+
+Build a functional full-stack application with:
+
+* Frontend
+* Backend APIs
+* Database
+* Authentication
+* Eligibility engine
+* AI/ML recommendation system
+* Search and filtering
+* Scheme comparison
+* User dashboard
+* Admin dashboard
+* Official scheme information
+* Proper validation
+* Error handling
+* Security
+* Responsive UI
+
+---
+
+# 1. CORE PROBLEM
+
+Many people in India are unaware of government healthcare schemes and do not know:
+
+* Which schemes they qualify for
+* What benefits they can receive
+* What eligibility criteria apply
+* What documents are required
+* How to apply
+* Where to apply
+* Which scheme is best for their situation
+
+The application should solve this problem through a simple:
+
+**"Tell us about yourself → Find schemes you're eligible for"**
+
+experience.
+
+---
+
+# 2. TARGET USERS
+
+Create the application for:
+
+### Primary users
+
+* Indian citizens
+* Low-income families
+* Rural users
+* Senior citizens
+* Students
+* Women
+* Families looking for healthcare assistance
+
+### Secondary user
+
+* Administrators who manage scheme information
+
+---
+
+# 3. MAIN USER FLOW
+
+The primary user journey should be:
+
+Landing Page
+↓
+Create Account / Continue as Guest
+↓
+Enter Personal Information
+↓
+Enter Socioeconomic Information
+↓
+Enter Healthcare Requirements
+↓
+Eligibility Analysis
+↓
+AI Recommendation
+↓
+Recommended Schemes
+↓
+Scheme Details
+↓
+Compare Schemes
+↓
+Application Guidance
+↓
+Save / Bookmark Scheme
+
+Make the flow extremely simple for non-technical users.
+
+---
+
+# 4. LANDING PAGE
+
+Create a professional healthcare-focused landing page.
+
+Hero section:
+
+Title:
+
+"Find the Right Healthcare Scheme for You"
+
+Subtitle:
+
+"Discover government healthcare schemes you may be eligible for — quickly, simply, and in one place."
+
+Primary CTA:
+
+"Check My Eligibility"
+
+Secondary CTA:
+
+"Explore Schemes"
+
+Include:
+
+* Clean healthcare design
+* Trust indicators
+* Simple explanation of how the platform works
+* Featured government schemes
+* Benefits section
+* FAQ section
+* Footer
+* Contact/About section
+
+Do not make it look like a generic AI-generated template.
+
+Use a professional Indian healthcare/public-service aesthetic.
+
+---
+
+# 5. USER REGISTRATION AND LOGIN
+
+Implement authentication.
+
+Allow:
+
+### Registration
+
+* Full name
+* Email
+* Mobile number
+* Password
+* Confirm password
+
+### Login
+
+* Email/mobile
+* Password
+
+Also provide:
+
+"Continue as Guest"
+
+Guest users should be able to perform eligibility checks but their results should not be permanently saved.
+
+Implement:
+
+* Password hashing
+* Authentication
+* Session/token management
+* Logout
+* Protected routes
+
+---
+
+# 6. USER PROFILE
+
+Create a complete user profile containing:
+
+### Personal Information
+
+* Full name
+* Age/date of birth
+* Gender
+* State
+* District
+* City/village
+
+### Socioeconomic Information
+
+* Annual family income
+* Occupation
+* Family size
+* BPL status
+* Rural/urban
+* Social category where legally/relevantly applicable
+
+### Family Information
+
+* Number of children
+* Number of elderly members
+* Number of dependents
+* Disability status
+
+### Healthcare Information
+
+* Current healthcare requirement
+* Chronic illness indicator
+* Hospitalization requirement
+* Maternal/child healthcare requirement
+* Insurance status
+
+IMPORTANT:
+
+Do not unnecessarily collect sensitive information.
+
+Clearly explain why each important field is being requested.
+
+---
+
+# 7. ELIGIBILITY QUESTIONNAIRE
+
+Create a multi-step questionnaire.
+
+Use a progress indicator:
+
+Step 1 — Personal
+Step 2 — Family
+Step 3 — Income
+Step 4 — Healthcare
+Step 5 — Location
+Step 6 — Review
+
+Use:
+
+* Dropdowns
+* Radio buttons
+* Checkboxes
+* Number inputs
+* Date inputs
+* Searchable location fields
+
+Add:
+
+* Back
+* Next
+* Save
+* Review
+* Submit
+
+Validate every field.
+
+---
+
+# 8. HEALTHCARE SCHEME DATABASE
+
+Create a structured database for government healthcare schemes.
+
+Initially populate the database with realistic example data for major Indian healthcare schemes such as:
+
+* Ayushman Bharat PM-JAY
+* Ayushman Bharat Digital Mission
+* Pradhan Mantri Surakshit Matritva Abhiyan
+* Janani Suraksha Yojana
+* Rashtriya Bal Swasthya Karyakram
+* Rashtriya Kishor Swasthya Karyakram
+* Central Government Health Scheme
+* Employees' State Insurance-related healthcare benefits
+* State-specific healthcare schemes
+
+IMPORTANT:
+
+Where exact eligibility or benefit information may change, clearly mark the data as requiring verification and provide the official government source.
+
+Do NOT invent government scheme rules.
+
+Structure each scheme with:
+
+```text
+Scheme Name
+Short Description
+Long Description
+Government Department
+Scheme Type
+Target Population
+States Covered
+Age Criteria
+Income Criteria
+Gender Criteria
+Occupation Criteria
+Family Criteria
+Healthcare Conditions
+Benefits
+Coverage Amount
+Documents Required
+Application Process
+Application Mode
+Official Website
+Helpline
+Last Verified Date
+Status
+```
+
+---
+
+# 9. ELIGIBILITY ENGINE
+
+Build a rule-based eligibility engine first.
+
+The engine should evaluate:
+
+* Age
+* Gender
+* State
+* Income
+* Family size
+* Occupation
+* BPL status
+* Rural/urban status
+* Disability
+* Maternal status
+* Child-related requirements
+* Healthcare requirement
+* Other relevant scheme conditions
+
+Return:
+
+### Eligible
+
+User satisfies the known criteria.
+
+### Potentially Eligible
+
+Some information is missing or eligibility depends on verification.
+
+### Not Eligible
+
+User clearly fails one or more required criteria.
+
+Do NOT simply return yes/no.
+
+Explain WHY.
+
+Example:
+
+"Potentially eligible because your income and state match the scheme criteria. Final eligibility may require verification through the official beneficiary database."
+
+---
+
+# 10. ELIGIBILITY EXPLANATION
+
+For every recommendation show:
+
+### Why you matched
+
+Example:
+
+"Recommended because:
+✓ You are within the required age range
+✓ Your annual income falls within the applicable threshold
+✓ Your state is covered
+✓ Your healthcare requirement matches the scheme"
+
+Also show:
+
+### What may prevent eligibility
+
+Example:
+
+"Final eligibility may depend on beneficiary database verification."
+
+This is extremely important.
+
+---
+
+# 11. AI/ML RECOMMENDATION SYSTEM
+
+Add an AI/ML recommendation layer on top of the rule-based eligibility engine.
+
+The system should rank schemes based on user requirements.
+
+Possible scoring:
+
+```text
+Eligibility Match = 50%
+Healthcare Need Match = 20%
+Demographic Match = 10%
+Location Match = 10%
+Income/Socioeconomic Match = 10%
+```
+
+Generate a recommendation score from 0–100.
+
+Example:
+
+```text
+Ayushman Bharat PM-JAY
+Match Score: 92%
+
+High Match
+```
+
+Do NOT allow the AI model to override official eligibility rules.
+
+The architecture should be:
+
+User Data
+↓
+Rule-Based Eligibility Filter
+↓
+Eligible/Potential Schemes
+↓
+ML/AI Ranking
+↓
+Recommendation
+↓
+Explanation
+
+This makes the system safer and more academically defensible.
+
+---
+
+# 12. MACHINE LEARNING OPTION
+
+Implement the recommendation engine so that it can later support a trained ML model.
+
+Create a modular architecture:
+
+```text
+recommendation/
+    rule_engine
+    feature_engineering
+    ranking_model
+    recommendation_service
+```
+
+Initially, if there is insufficient real-world training data, use a transparent weighted scoring model.
+
+Do NOT fabricate ML accuracy numbers.
+
+If synthetic data is used for demonstration, clearly label it as synthetic.
+
+---
+
+# 13. AI CHATBOT
+
+Add an AI healthcare-scheme assistant.
+
+The chatbot should answer questions such as:
+
+User:
+"Which scheme can help my family with hospitalization?"
+
+Assistant:
+"Based on the information in your profile, these schemes may be relevant..."
+
+The chatbot should be able to:
+
+* Explain schemes
+* Explain eligibility
+* Explain documents
+* Guide users through the application process
+* Compare schemes
+* Answer FAQs
+* Explain government terminology in simple language
+
+IMPORTANT:
+
+The chatbot must NOT:
+
+* Diagnose diseases
+* Give medical treatment
+* Make unsupported claims
+* Guarantee eligibility
+* Replace doctors
+* Pretend to be a government official
+
+Add a visible disclaimer:
+
+"This assistant provides informational guidance only. Always verify eligibility and application details through the official government source."
+
+---
+
+# 14. SEARCH SYSTEM
+
+Create a powerful scheme search.
+
+Users should be able to search:
+
+* Scheme name
+* Healthcare requirement
+* State
+* Age group
+* Income group
+* Beneficiary category
+
+Example:
+
+Search:
+"schemes for pregnant women"
+
+Results should prioritize relevant schemes.
+
+---
+
+# 15. FILTERS
+
+Add filters:
+
+* State
+* Age group
+* Gender
+* Income
+* Healthcare category
+* Scheme type
+* Beneficiary type
+* Application method
+
+Allow multiple filters simultaneously.
+
+---
+
+# 16. SCHEME CARD
+
+Each scheme should appear as a clean card.
+
+Example:
+
+---
+
+Ayushman Bharat PM-JAY
+
+Healthcare Coverage
+Government of India
+
+Match Score: 92%
+
+✓ Hospitalization
+✓ Eligible beneficiary category
+✓ Applicable location
+
+[View Details]
+[Compare]
+[Save]
+------
+
+Use badges:
+
+* Highly Recommended
+* Potentially Eligible
+* Verify Eligibility
+* Saved
+
+---
+
+# 17. SCHEME DETAILS PAGE
+
+Create a detailed scheme page.
+
+Sections:
+
+1. Overview
+2. Who can benefit?
+3. Eligibility
+4. Benefits
+5. Coverage
+6. Required Documents
+7. How to Apply
+8. Where to Apply
+9. Official Website
+10. Helpline
+11. Important Notes
+12. Last Verified
+
+Add:
+
+"Verify on Official Website"
+
+button.
+
+Do not send users to unofficial websites.
+
+---
+
+# 18. SCHEME COMPARISON
+
+Allow users to select 2–4 schemes.
+
+Create a comparison table.
+
+Compare:
+
+| Feature            | Scheme A | Scheme B |
+| ------------------ | -------- | -------- |
+| Eligibility        |          |          |
+| Coverage           |          |          |
+| Target Group       |          |          |
+| Income Criteria    |          |          |
+| Documents          |          |          |
+| Application        |          |          |
+| State Availability |          |          |
+
+Highlight important differences.
+
+---
+
+# 19. PERSONALIZED DASHBOARD
+
+After login, create:
+
+# My Healthcare Dashboard
+
+Show:
+
+* Profile completion
+* Recommended schemes
+* Saved schemes
+* Recent eligibility checks
+* Application guidance
+* Notifications
+* Recently viewed schemes
+
+Example:
+
+"3 schemes may be relevant to you."
+
+---
+
+# 20. ADMIN DASHBOARD
+
+Create an admin panel.
+
+Admin should be able to:
+
+* Login
+* Add schemes
+* Edit schemes
+* Delete/deactivate schemes
+* Update eligibility rules
+* Update benefits
+* Update documents
+* Update official URLs
+* Mark verification date
+* View users
+* View recommendation statistics
+* View popular searches
+* View eligibility-check analytics
+
+Add role-based access control.
+
+Normal users must NOT access admin routes.
+
+---
+
+# 21. DATABASE
+
+Use a proper relational database.
+
+Recommended:
+
+PostgreSQL.
+
+Create tables approximately like:
+
+```text
+users
+user_profiles
+schemes
+scheme_eligibility_rules
+scheme_benefits
+scheme_documents
+scheme_locations
+saved_schemes
+eligibility_checks
+recommendations
+search_history
+chat_sessions
+admins
+```
+
+Use proper relationships and indexes.
+
+Do not store duplicate information unnecessarily.
+
+---
+
+# 22. API ARCHITECTURE
+
+Create REST APIs.
+
+Example:
+
+```text
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+
+GET /api/schemes
+GET /api/schemes/:id
+
+POST /api/eligibility/check
+POST /api/recommendations
+
+GET /api/user/profile
+PUT /api/user/profile
+
+POST /api/schemes/:id/save
+DELETE /api/schemes/:id/save
+
+GET /api/user/saved-schemes
+
+POST /api/compare
+
+POST /api/chat
+
+GET /api/admin/schemes
+POST /api/admin/schemes
+PUT /api/admin/schemes/:id
+DELETE /api/admin/schemes/:id
+```
+
+Document APIs clearly.
+
+---
+
+# 23. FRONTEND TECHNOLOGY
+
+Prefer:
+
+* React
+* TypeScript
+* Vite or Next.js
+* Tailwind CSS
+* Modern component library
+* Responsive design
+
+Create reusable components:
+
+```text
+Navbar
+Footer
+SchemeCard
+SchemeGrid
+EligibilityForm
+ProgressBar
+RecommendationCard
+MatchScore
+FilterPanel
+SearchBar
+ComparisonTable
+Chatbot
+DashboardCard
+Modal
+Alert
+LoadingState
+EmptyState
+```
+
+---
+
+# 24. BACKEND TECHNOLOGY
+
+Prefer:
+
+* Python
+* FastAPI
+
+Use:
+
+* Pydantic
+* SQLAlchemy
+* PostgreSQL
+* JWT authentication
+* Proper service/repository architecture
+
+Suggested structure:
+
+```text
+backend/
+    app/
+        main.py
+        api/
+        models/
+        schemas/
+        services/
+        repositories/
+        recommendation/
+        eligibility/
+        auth/
+        database/
+        utils/
+```
+
+---
+
+# 25. PROJECT STRUCTURE
+
+Create a clean monorepo:
+
+```text
+healthcare-schemes-navigator/
+
+    frontend/
+
+    backend/
+
+    database/
+
+    ml/
+
+    docs/
+
+    README.md
+
+    docker-compose.yml
+
+    .env.example
+```
+
+---
+
+# 26. UI/UX REQUIREMENTS
+
+The UI must feel like a real product.
+
+Design principles:
+
+* Clean
+* Modern
+* Accessible
+* Minimal
+* Professional
+* Mobile-first
+* Healthcare/public-service oriented
+
+Use:
+
+* Cards
+* Rounded components
+* Clear typography
+* Good spacing
+* Icons
+* Subtle animations
+* Progress indicators
+* Skeleton loaders
+* Toast notifications
+
+Avoid:
+
+* Excessive gradients
+* Excessive animations
+* Clutter
+* Fake statistics
+* Generic template appearance
+
+---
+
+# 27. ACCESSIBILITY
+
+Support:
+
+* Keyboard navigation
+* Proper labels
+* Screen-reader-friendly structure
+* Good contrast
+* Large readable text
+* Error messages
+* Accessible forms
+
+---
+
+# 28. SECURITY
+
+Implement:
+
+* Password hashing
+* JWT authentication
+* Input validation
+* SQL injection protection
+* XSS protection
+* CORS configuration
+* Rate limiting for sensitive APIs
+* Environment variables for secrets
+* No API keys in frontend
+* Secure error handling
+
+Never expose passwords or secrets.
+
+---
+
+# 29. PRIVACY
+
+Because user information may include sensitive socioeconomic and healthcare-related data:
+
+* Collect only necessary information
+* Explain why information is collected
+* Avoid storing unnecessary sensitive information
+* Protect stored data
+* Provide logout functionality
+* Avoid exposing user information in URLs
+* Do not display personal data publicly
+
+Add a privacy notice.
+
+---
+
+# 30. OFFICIAL DATA SOURCES
+
+Use official Indian government sources wherever possible.
+
+Examples include:
+
+* myScheme
+* Ministry of Health & Family Welfare
+* National Health Authority
+* State government health departments
+* Official scheme portals
+
+Never present an unofficial website as an official application portal.
+
+Every scheme should have:
+
+"Official Source"
+
+and
+
+"Last Verified"
+
+fields.
+
+---
+
+# 31. IMPORTANT DATA RULE
+
+Do NOT hallucinate government scheme eligibility.
+
+If exact information cannot be verified:
+
+Display:
+
+"Eligibility information should be verified on the official government portal."
+
+The application is a navigation and information platform, not an authority that grants benefits.
+
+---
+
+# 32. ANALYTICS
+
+Create an admin analytics dashboard showing:
+
+* Total users
+* Total eligibility checks
+* Most searched schemes
+* Most recommended schemes
+* Most saved schemes
+* Popular healthcare categories
+* State-wise usage
+* Recommendation distribution
+
+Do not expose personally identifiable information in analytics.
+
+---
+
+# 33. ERROR HANDLING
+
+Create proper states for:
+
+* API failure
+* Database failure
+* No schemes found
+* Invalid form
+* Authentication failure
+* Network failure
+* AI failure
+
+Example:
+
+"No matching schemes were found based on the information provided. Try changing your requirements or explore all schemes."
+
+---
+
+# 34. DEMO MODE
+
+Create a demo mode for presentations.
+
+Provide sample profiles such as:
+
+### Example User 1
+
+Age: 62
+Income: Low
+State: Maharashtra
+Healthcare Need: Hospitalization
+
+### Example User 2
+
+Age: 28
+Gender: Female
+State: Maharashtra
+Healthcare Need: Maternal healthcare
+
+### Example User 3
+
+Age: 10
+State: Maharashtra
+Healthcare Need: Child healthcare
+
+The demo should clearly label these as fictional/demo profiles.
+
+---
+
+# 35. AI EXPLAINABILITY
+
+For every AI recommendation, show:
+
+"Why this scheme was recommended"
+
+and list the important factors.
+
+Example:
+
+```text
+Recommendation Score: 87%
+
+Main factors:
++ Income match
++ Location match
++ Healthcare requirement match
++ Beneficiary category match
+
+Confidence:
+Informational / requires official verification
+```
+
+Do not claim "87% chance of receiving benefits."
+
+The score represents recommendation relevance, NOT probability of approval.
+
+---
+
+# 36. OPTIONAL BLOCKCHAIN MODULE
+
+Design the architecture so blockchain can be added later.
+
+If implementing blockchain, use it only where it provides genuine value.
+
+Possible use:
+
+* Verification records
+* Consent/audit trail
+* Integrity of scheme metadata
+* Timestamping updates
+
+Do NOT store personal healthcare data directly on a public blockchain.
+
+If blockchain is implemented, create it as a separate service/module.
+
+---
+
+# 37. TESTING
+
+Create tests for:
+
+### Backend
+
+* Authentication
+* Eligibility rules
+* Recommendation scoring
+* API validation
+* Database operations
+
+### Frontend
+
+* Forms
+* Search
+* Filters
+* Scheme details
+* Comparison
+* Authentication
+
+### Example eligibility tests
+
+Test:
+
+1. Eligible user
+2. Ineligible user
+3. Missing information
+4. Multiple matching schemes
+5. State mismatch
+6. Income mismatch
+
+---
+
+# 38. DOCUMENTATION
+
+Create a professional README containing:
+
+* Project overview
+* Problem statement
+* Solution
+* Features
+* Architecture
+* Tech stack
+* Installation
+* Environment variables
+* Database setup
+* API documentation
+* ML/recommendation methodology
+* Security
+* Privacy
+* Testing
+* Future scope
+
+Also create:
+
+```text
+docs/
+    architecture.md
+    api.md
+    database.md
+    recommendation-system.md
+    eligibility-engine.md
+```
+
+---
+
+# 39. DOCKER
+
+Create Docker support.
+
+Provide:
+
+```text
+docker-compose.yml
+```
+
+with:
+
+* Frontend
+* Backend
+* PostgreSQL
+
+The project should be runnable with a simple Docker command.
+
+---
+
+# 40. ENVIRONMENT VARIABLES
+
+Create:
+
+```text
+.env.example
+```
+
+Include placeholders for:
+
+```text
+DATABASE_URL=
+JWT_SECRET=
+AI_API_KEY=
+```
+
+Never hardcode secrets.
+
+---
+
+# 41. DEVELOPMENT PROCESS
+
+Do NOT attempt to blindly generate everything at once.
+
+Follow this process:
+
+### Phase 1
+
+Analyze requirements and create architecture.
+
+### Phase 2
+
+Create database schema and seed data.
+
+### Phase 3
+
+Build backend APIs.
+
+### Phase 4
+
+Build eligibility engine.
+
+### Phase 5
+
+Build recommendation engine.
+
+### Phase 6
+
+Build frontend.
+
+### Phase 7
+
+Integrate frontend and backend.
+
+### Phase 8
+
+Add AI chatbot.
+
+### Phase 9
+
+Add admin dashboard.
+
+### Phase 10
+
+Testing and bug fixing.
+
+### Phase 11
+
+Dockerize.
+
+### Phase 12
+
+Prepare final documentation.
+
+After each phase:
+
+* Run the application
+* Check for errors
+* Fix issues
+* Do not leave broken imports
+* Do not leave placeholder functionality pretending to work
+
+---
+
+# 42. QUALITY STANDARD
+
+The final project should look like something that could actually be demonstrated to:
+
+* College professors
+* Hackathon judges
+* Government/public-service stakeholders
+* Recruiters
+
+It should NOT look like a basic CRUD college project.
+
+The important differentiator is:
+
+**AI-assisted personalized healthcare scheme navigation with explainable eligibility matching.**
+
+---
+
+# 43. FINAL DEMO FLOW
+
+Make sure this exact demo works:
+
+1. Open website
+2. Click "Check My Eligibility"
+3. Enter sample user details
+4. Submit questionnaire
+5. System evaluates eligibility
+6. System shows recommended schemes
+7. Show recommendation score
+8. Show "Why recommended"
+9. Open scheme details
+10. Show benefits
+11. Show documents
+12. Show application process
+13. Open comparison
+14. Compare two schemes
+15. Save a scheme
+16. Open dashboard
+17. Open AI assistant
+18. Ask a scheme-related question
+19. Open admin dashboard
+20. Show scheme management and analytics
+
+Every step must work without manually editing the database.
+
+---
+
+# 44. IMPORTANT INSTRUCTION TO YOU
+
+Before writing code:
+
+1. Inspect the existing project directory.
+2. Determine whether a project already exists.
+3. Do not unnecessarily delete working code.
+4. Create a clear implementation plan.
+5. Identify dependencies.
+6. Build incrementally.
+7. Test every major feature.
+8. Fix errors before moving forward.
+9. Keep the architecture modular.
+10. Use real, verifiable government scheme information wherever possible.
+11. Clearly label demo/synthetic data.
+12. Never fabricate eligibility rules or government benefits.
+
+At the end, provide:
+
+* What was built
+* How to run it
+* Environment variables required
+* Database setup
+* Test credentials for demo/admin
+* Major API endpoints
+* Known limitations
+* Future improvements
+
+Start by analyzing the project and producing the implementation plan and architecture. Then begin implementation phase by phase.
+# NEW MAJOR MODULE — LOCATION-BASED HOSPITAL & SCHEME NAVIGATOR
+
+Add a major feature called:
+
+## "Find Schemes Near You"
+
+The purpose of this module is to connect:
+
+**USER LOCATION → DISTRICT → TALUKA → HOSPITAL → AVAILABLE SCHEMES**
+
+This feature should allow users to discover which hospitals in their area provide/accept particular government healthcare schemes.
+
+---
+
+# 1. LOCATION SELECTION
+
+Allow the user to choose:
+
+* State
+* District
+* Taluka
+* City/Village
+* PIN code
+
+Also provide:
+
+### "Use My Location"
+
+If the user gives location permission, use their approximate location to identify nearby hospitals.
+
+IMPORTANT:
+
+Do not require or store precise location unnecessarily.
+
+Allow users to manually select their location instead.
+
+---
+
+# 2. LOCATION HIERARCHY
+
+Create a proper hierarchy:
+
+```text
+India
+ ↓
+State
+ ↓
+District
+ ↓
+Taluka
+ ↓
+City/Village
+ ↓
+Hospital
+ ↓
+Available Healthcare Schemes
+```
+
+Example:
+
+```text
+Maharashtra
+  ↓
+Kolhapur
+  ↓
+Karvir
+  ↓
+Nearby Hospitals
+      ↓
+Hospital A
+      ↓
+PM-JAY
+MJPJAY
+Other applicable schemes
+```
+
+---
+
+# 3. HOSPITAL DIRECTORY
+
+Create a searchable hospital directory.
+
+Each hospital should contain:
+
+```text
+Hospital Name
+Hospital Type
+Address
+State
+District
+Taluka
+City
+PIN Code
+Latitude
+Longitude
+Phone Number
+Emergency Contact
+Hospital Website
+Available Schemes
+Specialties
+Facilities
+Government/Private
+Empanelment Status
+Last Verified Date
+Official Source
+```
+
+Hospital types:
+
+* Government Hospital
+* Private Hospital
+* District Hospital
+* Sub-District Hospital
+* Primary Health Centre
+* Community Health Centre
+* Specialized Hospital
+* Medical College Hospital
+
+---
+
+# 4. HOSPITAL SEARCH
+
+Users should be able to search:
+
+* Hospital name
+* District
+* Taluka
+* PIN code
+* Scheme
+* Healthcare service
+* Location
+
+Example:
+
+```text
+Search:
+"PM-JAY hospitals in Kolhapur"
+```
+
+Return hospitals where the scheme is listed as available/accepted.
+
+Another example:
+
+```text
+District: Kolhapur
+Taluka: Karvir
+Scheme: PM-JAY
+```
+
+Show matching hospitals.
+
+---
+
+# 5. HOSPITAL CARDS
+
+Create a professional hospital card.
+
+Example:
+
+```text
+┌─────────────────────────────────────┐
+│ 🏥 ABC Multispeciality Hospital     │
+│                                     │
+│ Private Hospital                    │
+│ Karvir, Kolhapur                    │
+│                                     │
+│ Schemes Available                   │
+│ ✓ PM-JAY                            │
+│ ✓ MJPJAY                            │
+│                                     │
+│ 📍 4.2 km away                      │
+│                                     │
+│ [View Hospital] [Directions]       │
+└─────────────────────────────────────┘
+```
+
+Do not show distance if the user's location is unavailable.
+
+---
+
+# 6. HOSPITAL DETAILS PAGE
+
+When the user opens a hospital, show:
+
+### Hospital Overview
+
+* Hospital name
+* Hospital type
+* Address
+* Contact information
+* Location
+* Facilities
+* Specialties
+
+### Government Schemes Available
+
+Display every verified scheme associated with the hospital.
+
+For each scheme show:
+
+* Scheme name
+* Scheme type
+* Coverage/benefit
+* Eligibility summary
+* Empanelment/availability status
+* Last verified date
+* Official source
+
+Example:
+
+```text
+Healthcare Schemes
+
+✓ Ayushman Bharat PM-JAY
+  Status: Empanelled
+  Last verified: August 2026
+
+✓ Maharashtra-specific scheme
+  Status: Empanelled
+  Last verified: August 2026
+```
+
+---
+
+# 7. SCHEME → HOSPITAL SEARCH
+
+The relationship must work in BOTH directions.
+
+### Direction 1
+
+User selects:
+
+**Scheme → Find Hospitals**
+
+Example:
+
+```text
+PM-JAY
+↓
+Maharashtra
+↓
+Kolhapur
+↓
+Karvir
+↓
+Hospitals accepting/empanelled for PM-JAY
+```
+
+### Direction 2
+
+User selects:
+
+**Hospital → Find Schemes**
+
+Example:
+
+```text
+Hospital ABC
+↓
+Available Schemes
+↓
+PM-JAY
+MJPJAY
+Other verified schemes
+```
+
+This bidirectional relationship is a core feature.
+
+---
+
+# 8. USER LOCATION + ELIGIBILITY
+
+Combine the location system with the existing eligibility engine.
+
+Example:
+
+User:
+
+```text
+Age: 62
+Income: Low
+State: Maharashtra
+District: Kolhapur
+Taluka: Karvir
+Healthcare need: Hospitalization
+```
+
+System:
+
+```text
+STEP 1
+Determine potentially eligible schemes
+
+        ↓
+
+STEP 2
+Filter schemes available in user's location
+
+        ↓
+
+STEP 3
+Find hospitals associated with those schemes
+
+        ↓
+
+STEP 4
+Rank nearby hospitals
+
+        ↓
+
+FINAL RESULT
+```
+
+Example result:
+
+```text
+You may be eligible for:
+
+🥇 PM-JAY
+Match: High
+
+Available at 8 hospitals near you.
+
+[View Hospitals]
+```
+
+---
+
+# 9. "NEAREST AVAILABLE HOSPITALS"
+
+Create a feature:
+
+## Find Nearby Hospitals
+
+If location is available, calculate approximate distance using:
+
+* Latitude
+* Longitude
+
+Use a standard geographic distance calculation such as the Haversine formula.
+
+Sort by:
+
+1. Distance
+2. Scheme availability
+3. Hospital verification status
+4. Relevant healthcare service
+
+Do not claim that a hospital can provide a specific treatment unless the data source verifies it.
+
+---
+
+# 10. MAP VIEW
+
+Add an optional map interface.
+
+Show:
+
+* User's approximate location
+* Nearby hospitals
+* Hospital markers
+* Scheme filters
+
+Example filters:
+
+```text
+☐ PM-JAY
+☐ State Healthcare Scheme
+☐ Government Hospital
+☐ Private Hospital
+☐ Emergency Services
+```
+
+Clicking a marker should open:
+
+```text
+Hospital Name
+Distance
+Available Schemes
+[View Details]
+[Directions]
+```
+
+Do not expose the user's exact location publicly.
+
+---
+
+# 11. DIRECTIONS
+
+Add a:
+
+### "Get Directions"
+
+button.
+
+It should open the user's preferred map/navigation service using the hospital's location.
+
+Do not build a complete navigation system yourself.
+
+---
+
+# 12. LOCATION FILTERS
+
+Add filters:
+
+### State
+
+### District
+
+### Taluka
+
+### PIN Code
+
+### Hospital Type
+
+### Scheme
+
+### Specialty
+
+### Facilities
+
+### Distance
+
+Allow combinations.
+
+Example:
+
+```text
+Maharashtra
++
+Kolhapur
++
+Karvir
++
+PM-JAY
++
+Private Hospital
+```
+
+Return only matching hospitals.
+
+---
+
+# 13. HOSPITAL ↔ SCHEME DATABASE DESIGN
+
+Create a many-to-many relationship.
+
+One hospital can have multiple schemes.
+
+One scheme can be available at multiple hospitals.
+
+Create:
+
+```text
+hospitals
+
+schemes
+
+hospital_schemes
+```
+
+The junction table should contain:
+
+```text
+id
+hospital_id
+scheme_id
+status
+empanelment_number (if officially available)
+services_covered
+last_verified_date
+official_source
+notes
+```
+
+Possible status values:
+
+```text
+ACTIVE
+INACTIVE
+PENDING_VERIFICATION
+UNKNOWN
+```
+
+Never assume that a hospital accepts a scheme merely because it exists in the same district.
+
+---
+
+# 14. DATABASE STRUCTURE
+
+Add:
+
+```text
+states
+districts
+talukas
+locations
+hospitals
+hospital_schemes
+hospital_services
+```
+
+Relationships:
+
+```text
+State
+ └── District
+      └── Taluka
+           └── Hospital
+                └── Hospital Schemes
+                       └── Scheme
+```
+
+Use foreign keys.
+
+Add indexes for:
+
+* State
+* District
+* Taluka
+* PIN code
+* Scheme ID
+* Hospital ID
+* Latitude/longitude
+
+---
+
+# 15. DATA VERIFICATION
+
+This feature is extremely important.
+
+Hospital and scheme information can change.
+
+Every hospital-scheme relationship must contain:
+
+```text
+Last Verified
+Verification Source
+Verification Status
+```
+
+Display:
+
+### "Verified"
+
+when information comes from a trusted/official source.
+
+Display:
+
+### "Needs Verification"
+
+when information is incomplete or outdated.
+
+Do not fabricate hospital-scheme relationships.
+
+---
+
+# 16. ADMIN HOSPITAL MANAGEMENT
+
+Extend the admin dashboard.
+
+Add:
+
+# Hospital Management
+
+Admin can:
+
+* Add hospital
+* Edit hospital
+* Remove/deactivate hospital
+* Add scheme to hospital
+* Remove scheme from hospital
+* Update empanelment status
+* Update facilities
+* Update contact details
+* Update location
+* Update verification date
+* Add official source
+* Bulk import hospital data
+
+Add CSV import/export if practical.
+
+---
+
+# 17. HOSPITAL DATA IMPORT
+
+Design the backend so hospital data can be imported from CSV.
+
+Example:
+
+```text
+hospital_name
+hospital_type
+state
+district
+taluka
+city
+pin_code
+address
+latitude
+longitude
+phone
+website
+scheme_name
+scheme_status
+source
+last_verified
+```
+
+Create validation during import.
+
+Reject:
+
+* Invalid coordinates
+* Missing hospital name
+* Invalid scheme IDs
+* Duplicate hospitals
+* Invalid location hierarchy
+
+---
+
+# 18. LOCATION-BASED RECOMMENDATION SCORE
+
+Add a separate hospital recommendation score.
+
+Example:
+
+```text
+Hospital Score =
+
+Scheme Match       40%
+Distance           25%
+Healthcare Service 15%
+Verification       10%
+Hospital Type      10%
+```
+
+Display:
+
+```text
+Recommended Hospital
+Match: 91%
+```
+
+IMPORTANT:
+
+This is a recommendation score, NOT a medical quality score.
+
+Never claim:
+
+"Best hospital"
+
+unless there is an independently validated basis.
+
+Use:
+
+"Recommended based on your selected criteria."
+
+---
+
+# 19. SEARCH RESULTS PAGE
+
+Create a dedicated page:
+
+# Hospitals Near You
+
+Example:
+
+```text
+Location:
+Kolhapur → Karvir
+
+Scheme:
+PM-JAY
+
+12 hospitals found
+```
+
+Allow:
+
+### List View
+
+and
+
+### Map View
+
+Toggle.
+
+---
+
+# 20. EMPTY STATES
+
+If no hospital is found:
+
+```text
+No hospitals found
+
+We couldn't find a verified hospital matching all your selected filters.
+
+Try:
+• Selecting a nearby taluka
+• Removing a filter
+• Exploring all available hospitals
+```
+
+---
+
+# 21. INTEGRATE INTO MAIN NAVIGATION
+
+Main navigation should contain:
+
+```text
+Home
+Find Schemes
+Check Eligibility
+Find Hospitals
+Compare
+My Dashboard
+AI Assistant
+```
+
+The new major CTA should be:
+
+### "Find Hospitals Near Me"
+
+---
+
+# 22. COMPLETE USER EXPERIENCE
+
+The final application should support these three major discovery methods:
+
+## Method 1 — User First
+
+```text
+My Information
+↓
+Eligible Schemes
+↓
+Hospitals Offering Those Schemes
+```
+
+## Method 2 — Location First
+
+```text
+My Location
+↓
+Nearby Hospitals
+↓
+Schemes Available
+```
+
+## Method 3 — Scheme First
+
+```text
+Healthcare Scheme
+↓
+District/Taluka
+↓
+Hospitals Offering Scheme
+```
+
+All three flows must eventually connect.
+
+---
+
+# 23. FINAL PRODUCT ARCHITECTURE
+
+The overall application should now be:
+
+```text
+                    HEALTHCARE SCHEMES NAVIGATOR
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+          ▼                   ▼                   ▼
+   SCHEME DISCOVERY     ELIGIBILITY ENGINE   HOSPITAL FINDER
+          │                   │                   │
+          │                   ▼                   │
+          │            AI/ML RECOMMENDER          │
+          │                   │                   │
+          └───────────────────┼───────────────────┘
+                              ▼
+                    PERSONALIZED RESULTS
+                              │
+               ┌──────────────┼──────────────┐
+               ▼              ▼              ▼
+            Schemes        Hospitals      Comparison
+               │              │
+               └──────────────┼──────────────┘
+                              ▼
+                     APPLICATION GUIDANCE
+```
+
+The core differentiator of the project should be:
+
+**"Don't just tell users which healthcare scheme they may qualify for — tell them where they can actually access it."**
+
+---
+
+# 24. DEMO SCENARIO
+
+Create a presentation-ready demo:
+
+### User enters:
+
+```text
+State: Maharashtra
+District: Kolhapur
+Taluka: Karvir
+Age: 62
+Income: Low
+Healthcare Requirement: Hospitalization
+```
+
+The application should produce:
+
+```text
+YOUR PERSONALIZED RESULTS
+
+3 schemes may be relevant to you.
+
+1. PM-JAY
+   High Match
+   ↓
+   8 verified hospitals nearby
+
+2. State Healthcare Scheme
+   High Match
+   ↓
+   5 hospitals nearby
+```
+
+Then clicking:
+
+**"View Hospitals"**
+
+shows:
+
+```text
+Nearby Hospitals
+
+1. Hospital A
+   2.4 km
+   ✓ PM-JAY
+   ✓ State Scheme
+
+2. Hospital B
+   5.1 km
+   ✓ PM-JAY
+
+3. Hospital C
+   7.3 km
+   ✓ State Scheme
+```
+
+Then:
+
+**Hospital A → View Details**
+
+shows:
+
+```text
+Hospital A
+
+Karvir, Kolhapur
+
+Schemes:
+✓ PM-JAY
+✓ State Healthcare Scheme
+
+[View Scheme Details]
+[Get Directions]
+[Call Hospital]
+```
+
+This complete flow must work during the final demonstration.
+
+
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-08-30T17:52:29+05:30.
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.7 Flash (High). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>

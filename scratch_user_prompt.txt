@@ -1,0 +1,2073 @@
+<USER_REQUEST>
+I NEED YOU TO MODIFY MY EXISTING PROJECT, NOT BUILD A NEW PROJECT.
+
+Project:
+Government Healthcare Schemes Navigator
+
+Existing project location:
+Anirudha_healthcare_project
+
+Existing architecture:
+Backend = FastAPI + SQLAlchemy
+Frontend = React + TypeScript + Tailwind
+Database = existing project database
+Maps = Leaflet
+API = existing FastAPI endpoints
+
+============================================================
+MAIN TASK
+============================================================
+
+I have provided REAL DATA FILES in this project/conversation.
+
+I want you to IMPORT AND INTEGRATE THESE DATA FILES INTO THE EXISTING APPLICATION.
+
+DO NOT create fake data.
+DO NOT create placeholder "string" values.
+DO NOT replace existing working features.
+DO NOT rebuild the application from scratch.
+DO NOT delete existing database models unless absolutely necessary.
+DO NOT break existing APIs or frontend pages.
+
+First inspect the ENTIRE EXISTING PROJECT.
+
+Understand:
+
+- backend structure
+- frontend structure
+- database models
+- migrations
+- seed files
+- API routes
+- existing hospital models
+- existing scheme models
+- location models
+- hospital-scheme relationship models
+- frontend API services
+- existing hospital navigator
+- existing scheme navigator
+
+Then integrate the supplied real datasets into the existing architecture.
+
+============================================================
+DATA FILE 1 — HOSPITAL DATA
+============================================================
+
+The uploaded hospital dataset is:
+
+Pasted text (2).txt
+
+It contains a JSON structure similar to:
+
+{
+  "empanelled_hospitals": [
+    {
+      "id": 1,
+      "hospital_name": "Amrutvahini rural hospital, ARH",
+      "district": "AHMADNAGAR"
+    },
+    ...
+  ]
+}
+
+This dataset contains actual hospital records.
+
+Examples include hospitals in:
+
+AHMADNAGAR
+AKOLA
+AMRAVATI
+AURANGABAD
+BEED
+BHANDARA
+BULDHANA
+CHANDRAPUR
+DHULE
+JALGAON
+JALNA
+KOLHAPUR
+LATUR
+MUMBAI
+NAGPUR
+NANDED
+NANDURBAR
+NASHIK
+OSMANABAD
+PARBHANI
+PUNE
+SATARA
+SINDHUDURG
+SOLAPUR
+THANE
+WARDHA
+WASHIM
+YAVATMAL
+
+Do not type these records manually.
+
+Parse the supplied file programmatically.
+
+============================================================
+HOSPITAL IMPORT REQUIREMENTS
+============================================================
+
+Import every valid hospital record from:
+
+empanelled_hospitals
+
+into the existing hospital database.
+
+Map:
+
+source id
+    →
+existing hospital identifier where appropriate
+
+hospital_name
+    →
+hospital.name
+
+district
+    →
+hospital.district
+
+state
+    →
+Maharashtra, because this dataset is Maharashtra hospital data,
+unless the source explicitly indicates otherwise.
+
+IMPORTANT:
+
+Do not modify the original hospital names unnecessarily.
+
+Preserve the source hospital name.
+
+For example:
+
+"APPLE HOSPITALS AND RESEARCH INSTITUTE LTD, ARI"
+
+must not become:
+
+"Apple Hospital"
+
+unless the UI separately creates a normalized display name.
+
+The original source value must remain available.
+
+============================================================
+DATA PROVENANCE
+============================================================
+
+Add provenance to imported hospital records.
+
+Each imported hospital should have:
+
+data_source
+source_file
+source_record_id
+verification_status
+last_verified_date
+
+Example:
+
+data_source:
+"Provided hospital dataset"
+
+source_file:
+"Pasted text (2).txt"
+
+source_record_id:
+157
+
+verification_status:
+"source_provided"
+
+last_verified_date:
+current import date
+
+DO NOT claim that a hospital is "officially verified" unless the source itself is an official source.
+
+Instead use:
+
+"Source data"
+
+or
+
+"Imported source record"
+
+where appropriate.
+
+============================================================
+IMPORTANT: DO NOT INVENT MISSING HOSPITAL DATA
+============================================================
+
+The supplied hospital dataset contains:
+
+- hospital ID
+- hospital name
+- district
+
+It does NOT reliably provide:
+
+- complete address
+- taluka
+- pincode
+- phone
+- email
+- latitude
+- longitude
+- hospital website
+- hospital type
+- bed count
+- ICU beds
+- emergency beds
+- individual scheme mapping
+
+Therefore:
+
+DO NOT invent these fields.
+
+If the existing schema requires them, make them nullable where safe.
+
+If the existing UI expects them, display:
+
+"Not available in supplied dataset"
+
+instead of fake values.
+
+============================================================
+2. SCHEME DATA
+============================================================
+
+I have also provided a scheme dataset:
+
+Pasted markdown.md
+
+It contains records with fields such as:
+
+id
+scheme_full_name
+disease / focus
+state
+income_limit
+documents_required
+application_link
+
+Examples include:
+
+Pradhan Mantri Matru Vandana Yojana (PMMVY)
+Janani Suraksha Yojana (JSY)
+Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY)
+Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)
+Free & Concessional Treatment in Charitable Hospitals
+Kutumb Niyojan
+Janani Shishu Suraksha Karyakram (JSSK)
+Vatsalya - Mata va Bal Arogya
+Pradhan Mantri Surakshit Matritva Abhiyan (PMSMA)
+and additional records.
+
+Import the supplied scheme data into the EXISTING scheme database.
+
+============================================================
+SCHEME FIELD MAPPING
+============================================================
+
+Map:
+
+scheme_full_name
+→
+scheme.name
+
+disease / focus
+→
+scheme.category / focus
+
+state
+→
+scheme.coverage_state
+
+income_limit
+→
+scheme.income_limit
+
+documents_required
+→
+scheme.documents
+
+application_link
+→
+scheme.application_url
+
+Preserve the original imported values.
+
+Do not silently change policy information.
+
+============================================================
+VERY IMPORTANT — SCHEME DATA VALIDATION
+============================================================
+
+Some supplied scheme records may contain information that needs independent verification.
+
+Therefore:
+
+DO NOT present every field as "officially verified" merely because it exists in the uploaded file.
+
+Store:
+
+source_file
+source_record_id
+verification_status
+
+Use:
+
+"source_provided"
+
+until independently verified.
+
+If a field is not independently verified:
+
+DO NOT invent or modify it.
+
+============================================================
+3. DATABASE INTEGRATION
+============================================================
+
+Use the existing SQLAlchemy models if they already support the required fields.
+
+First inspect:
+
+Scheme
+Hospital
+Location
+HospitalScheme
+State
+District
+Taluka
+and related models.
+
+If models already exist:
+
+reuse them.
+
+Do not create duplicate models.
+
+If a relationship already exists:
+
+reuse it.
+
+============================================================
+4. HOSPITAL-SCHEME RELATIONSHIP
+============================================================
+
+THIS IS EXTREMELY IMPORTANT.
+
+The supplied hospital file lists:
+
+hospital_name
+district
+
+It does NOT explicitly state:
+
+hospital → PM-JAY
+hospital → MJPJAY
+hospital → PMSMA
+etc.
+
+Therefore:
+
+DO NOT automatically assign every hospital to every scheme.
+
+DO NOT create fake HospitalScheme rows.
+
+DO NOT assume:
+
+"empanelled_hospitals" = empanelled for every scheme.
+
+If the existing application requires hospital-scheme mappings:
+
+only create mappings when a source dataset explicitly supports that relationship.
+
+Otherwise show:
+
+"Scheme-specific empanelment information not available in supplied dataset."
+
+============================================================
+5. DISTRICT FILTERING
+============================================================
+
+Connect imported hospitals to the existing location system.
+
+For example:
+
+Maharashtra
+    ↓
+KOLHAPUR
+    ↓
+hospital records
+
+Maharashtra
+    ↓
+PUNE
+    ↓
+hospital records
+
+Maharashtra
+    ↓
+THANE
+    ↓
+hospital records
+
+The hospital dataset currently provides district-level information.
+
+Do NOT invent talukas.
+
+If a hospital name itself contains a locality/taluka, such as:
+
+"Hattarki Hospital, Gadhinglaj, HHG"
+
+do not automatically treat "Gadhinglaj" as a verified taluka unless the location database confirms it.
+
+============================================================
+6. HOSPITAL NAVIGATOR
+============================================================
+
+Modify the existing Hospital Navigator to use the imported real database.
+
+User flow:
+
+Find Hospitals
+
+↓
+
+Select State
+
+↓
+
+Select District
+
+↓
+
+Select Taluka if verified data exists
+
+↓
+
+Show hospitals
+
+For example:
+
+State:
+Maharashtra
+
+District:
+Kolhapur
+
+Then show actual imported hospitals such as:
+
+APPLE HOSPITALS AND RESEARCH INSTITUTE LTD, ARI
+
+Alliance multispecialty hospital (LLP), AMP
+
+Athaayu Multispecialty hospital, AMU
+
+Contacare eye hospital, VEC
+
+Diamond superspecialty hospital, DSP
+
+Dr. D. Y. Patil Medical College, Hospital & Research Institute, DYR
+
+Hattarki Hospital, Gadhinglaj, HHG
+
+etc.
+
+These names come from the supplied dataset and must be loaded from the database, NOT hardcoded into React.
+
+============================================================
+7. SEARCH
+============================================================
+
+Hospital search must query the backend database.
+
+Support:
+
+hospital name
+district
+state
+
+Example:
+
+Search:
+"Jupiter"
+
+returns the actual imported:
+
+Jupiter Hospital, JUP
+
+if present in the database.
+
+Do not hardcode search results.
+
+============================================================
+8. DISTRICT FILTER
+============================================================
+
+When user selects:
+
+Maharashtra
+→ Kolhapur
+
+only hospitals with:
+
+district = KOLHAPUR
+
+should appear.
+
+When user selects:
+
+Maharashtra
+→ Pune
+
+only:
+
+district = PUNE
+
+should appear.
+
+Use backend filtering.
+
+Do not download all data to frontend and manually filter unless the existing architecture specifically requires it.
+
+============================================================
+9. GPS FEATURE
+============================================================
+
+KEEP THE EXISTING GPS FEATURE.
+
+However:
+
+The imported hospital data does not contain coordinates.
+
+Therefore do NOT generate fake latitude/longitude.
+
+If coordinates already exist in the existing database for a hospital:
+
+keep them.
+
+If coordinates do not exist:
+
+display:
+
+"Location coordinates unavailable"
+
+Do NOT show fake map markers.
+
+Do NOT calculate fake distances.
+
+If later a verified geocoding process is implemented, store:
+
+latitude
+longitude
+coordinate_source
+coordinate_verified
+
+============================================================
+10. MAP
+============================================================
+
+Keep the existing Leaflet map.
+
+Only show hospital markers when valid coordinates exist.
+
+For hospitals without coordinates:
+
+do not put them at:
+
+Mumbai
+Pune
+Kolhapur
+or any random default coordinate.
+
+Instead show them in the list with:
+
+"Map location unavailable"
+
+============================================================
+11. HOSPITAL DETAIL PAGE
+============================================================
+
+Create/update hospital details.
+
+Display:
+
+Hospital Name
+District
+State
+Source Record ID
+Data Source
+Verification Status
+Last Verified
+
+Example:
+
+Hospital:
+APPLE HOSPITALS AND RESEARCH INSTITUTE LTD, ARI
+
+District:
+KOLHAPUR
+
+State:
+Maharashtra
+
+Status:
+Source data imported
+
+Source:
+Pasted text (2).txt
+
+Do NOT display empty fields as:
+
+"string"
+
+Use:
+
+"Not available"
+
+============================================================
+12. SCHEME NAVIGATOR
+============================================================
+
+Make the existing Scheme Navigator use the imported scheme database.
+
+The scheme cards must show actual database values.
+
+Do not hardcode:
+
+scheme names
+income limits
+documents
+application URLs
+
+inside React components.
+
+Frontend should request data from:
+
+GET /api/schemes
+
+============================================================
+13. API
+============================================================
+
+Verify and update these endpoints as necessary:
+
+GET /api/schemes
+GET /api/schemes/{id}
+
+GET /api/hospitals
+GET /api/hospitals/{id}
+
+GET /api/hospitals?district=KOLHAPUR
+
+GET /api/hospitals?district=PUNE
+
+GET /api/locations
+
+If existing endpoint names differ:
+
+KEEP THE EXISTING API CONTRACT where possible.
+
+Do not unnecessarily break frontend integration.
+
+============================================================
+14. NEW USEFUL ENDPOINTS
+============================================================
+
+If needed, implement:
+
+GET /api/hospitals/districts
+
+GET /api/hospitals?state=Maharashtra&district=KOLHAPUR
+
+GET /api/hospitals/search?q=Jupiter
+
+GET /api/hospitals/{hospital_id}
+
+For scheme-specific hospitals:
+
+GET /api/schemes/{scheme_id}/hospitals
+
+BUT:
+
+return results ONLY when an actual hospital-scheme relationship exists.
+
+Do not infer mappings.
+
+============================================================
+15. REMOVE PLACEHOLDER DATA
+============================================================
+
+Search backend and frontend for:
+
+"string"
+
+"Hospital Name"
+
+"Scheme Name"
+
+"Example Hospital"
+
+"Example Scheme"
+
+"Lorem ipsum"
+
+dummy hospitals
+
+fake schemes
+
+mock hospital arrays
+
+hardcoded demo hospitals
+
+placeholder JSON
+
+Remove these from the REAL application data.
+
+IMPORTANT:
+
+Do NOT modify Swagger/OpenAPI automatically generated examples merely because Swagger displays:
+
+"string"
+
+That is normal.
+
+The important thing is:
+
+ACTUAL API RESPONSE.
+
+============================================================
+16. SEED / IMPORT SCRIPT
+============================================================
+
+Create a proper reusable importer.
+
+For example:
+
+backend/
+    data/
+        hospitals.json
+        schemes.json
+
+    scripts/
+        import_healthcare_data.py
+
+or use the project's existing seed architecture.
+
+The importer must be:
+
+- repeatable
+- idempotent
+- safe to run multiple times
+- duplicate-aware
+
+Running it twice must NOT create duplicate hospitals.
+
+============================================================
+17. DUPLICATE HANDLING
+============================================================
+
+Hospital uniqueness should preferably use:
+
+source_file + source_record_id
+
+or another reliable source identifier.
+
+Do not create duplicate hospitals if importer is run multiple times.
+
+Also detect possible duplicates based on:
+
+normalized hospital name
++
+district
+
+But do NOT automatically merge hospitals only because their names look similar.
+
+Flag them for review.
+
+============================================================
+18. DATA QUALITY REPORT
+============================================================
+
+After importing, generate a report containing:
+
+Total hospital records in source
+Total hospitals imported
+Total hospitals skipped
+Total duplicates
+Total invalid records
+Total districts represented
+Total scheme records
+Total schemes imported
+Total records missing optional fields
+Total records with source provenance
+
+============================================================
+19. EXPECTED HOSPITAL DATA
+============================================================
+
+The supplied dataset includes approximately 500 hospital records, with IDs continuing through the 400s and into the Yavatmal records.
+
+Do NOT assume the exact count.
+
+Calculate the actual count from the file.
+
+At the end tell me:
+
+"Source hospital records found: X"
+
+"Successfully imported: Y"
+
+"Skipped: Z"
+
+"Duplicates: N"
+
+============================================================
+20. DATA QUALITY CHECKS
+============================================================
+
+Add automated tests:
+
+test_hospital_import()
+
+test_scheme_import()
+
+test_no_duplicate_hospitals()
+
+test_no_placeholder_hospitals()
+
+test_no_placeholder_schemes()
+
+test_district_filter()
+
+test_hospital_search()
+
+test_scheme_api()
+
+test_hospital_api()
+
+test_source_provenance()
+
+test_no_fake_coordinates()
+
+============================================================
+21. FRONTEND
+============================================================
+
+Update the existing frontend.
+
+DO NOT create a completely new UI.
+
+Keep the current design.
+
+Connect existing components to the backend.
+
+Important pages:
+
+Home
+Scheme Navigator
+Eligibility Questionnaire
+Hospital Navigator
+Scheme Details
+Hospital Details
+Comparison
+Dashboard
+Admin
+
+============================================================
+22. HOSPITAL NAVIGATOR UI
+============================================================
+
+Improve the Hospital Navigator.
+
+Show:
+
+------------------------------------------------
+Find Healthcare Hospitals
+------------------------------------------------
+
+State
+[ Maharashtra ▼ ]
+
+District
+[ Kolhapur ▼ ]
+
+Taluka
+[ Select Taluka ▼ ]
+
+[ Search Hospitals ]
+
+------------------------------------------------
+
+Results:
+
+APPLE HOSPITALS AND RESEARCH INSTITUTE LTD, ARI
+
+KOLHAPUR
+
+Source data ✓
+
+[View Details]
+[Directions]  ← only if coordinates exist
+
+------------------------------------------------
+
+Do not display fake:
+
+distance
+beds
+phone
+address
+coordinates
+
+when those values are unavailable.
+
+============================================================
+23. SOURCE BADGES
+============================================================
+
+Use clear badges:
+
+"Source Data"
+
+"Verified"
+
+"Not Available"
+
+"Calculated"
+
+"Demo"
+
+Do not use "Officially Verified" unless the data is actually verified against an official source.
+
+============================================================
+24. EXISTING DEMO PERSONAS
+============================================================
+
+KEEP the existing:
+
+Senior Citizen
+Young Mother
+Child Care
+
+demo personas.
+
+But do not allow demo data to overwrite the real database.
+
+Demo personas should only populate questionnaire inputs.
+
+============================================================
+25. EXISTING AI RECOMMENDATION SYSTEM
+============================================================
+
+KEEP the existing explainable scoring:
+
+Srule 50%
+Sneed 20%
+Sdemo 10%
+Sloc 10%
+Ssocio 10%
+
+However, recommendation results must now use the imported real scheme records.
+
+Do not invent eligibility rules for newly imported schemes.
+
+If a scheme lacks enough verified rule information:
+
+show:
+
+"Eligibility rules require verification"
+
+rather than guessing.
+
+============================================================
+26. ADMIN PANEL
+============================================================
+
+Add:
+
+Data Management
+
+→ Schemes
+
+→ Hospitals
+
+→ Sources
+
+→ Data Quality
+
+Admin should be able to see:
+
+Hospital count
+Scheme count
+District count
+Records requiring verification
+Missing coordinates
+Missing source information
+Duplicate candidates
+
+============================================================
+27. DATABASE MIGRATION
+============================================================
+
+Before changing database schema:
+
+inspect existing schema.
+
+Only create migrations if necessary.
+
+Do not destroy existing database data.
+
+Do not run:
+
+DROP DATABASE
+
+DROP TABLE
+
+or destructive reset commands.
+
+Preserve existing user accounts, bookmarks, telemetry and other project data.
+
+============================================================
+28. IMPORTANT SOURCE DATA RULE
+============================================================
+
+Treat the uploaded files as DATA INPUTS.
+
+Do not treat every field as independently government-verified unless its provenance confirms that.
+
+The system should distinguish:
+
+SOURCE PROVIDED
+
+from:
+
+OFFICIALLY VERIFIED
+
+from:
+
+CALCULATED
+
+from:
+
+DEMO
+
+============================================================
+29. ACTUAL API VERIFICATION
+============================================================
+
+After implementation start the backend.
+
+Run:
+
+uvicorn app.main:app --reload --port 8000
+
+Then test the actual endpoints.
+
+Do NOT just inspect Python code.
+
+Actually query:
+
+GET /api/schemes
+
+GET /api/hospitals
+
+GET /api/hospitals?district=KOLHAPUR
+
+GET /api/hospitals?district=PUNE
+
+GET /api/hospitals/search?q=Jupiter
+
+and relevant location endpoints.
+
+Show me actual returned records.
+
+============================================================
+30. FRONTEND VERIFICATION
+============================================================
+
+Start:
+
+npm run dev
+
+Open:
+
+http://localhost:5173
+
+Verify:
+
+1. Scheme cards display actual scheme names.
+2. Hospital cards display actual hospital names.
+3. Kolhapur filtering works.
+4. Pune filtering works.
+5. Thane filtering works.
+6. Hospital search works.
+7. No "string" appears in normal application UI.
+8. No fake hospital data appears.
+9. Map only displays valid coordinates.
+10. Scheme details load from API.
+11. Existing eligibility questionnaire still works.
+12. Existing recommendation system still works.
+13. Existing dashboard still works.
+14. Existing admin panel still works.
+
+============================================================
+31. VERY IMPORTANT — TEST THIS SPECIFIC CASE
+============================================================
+
+Test:
+
+State:
+Maharashtra
+
+District:
+Kolhapur
+
+Expected hospital results must come from the supplied dataset.
+
+The supplied dataset contains records such as:
+
+APPLE HOSPITALS AND RESEARCH INSTITUTE LTD, ARI
+
+Alliance multispecialty hospital (LLP), AMP
+
+Athaayu Multispecialty hospital, AMU
+
+Contacare eye hospital, VEC
+
+Diamond superspecialty hospital, DSP
+
+Dr. D. Y. Patil Medical College, Hospital & Research Institute, DYR
+
+Hattarki Hospital, Gadhinglaj, HHG
+
+Hridaya Multi-Speciality Hospital & Research Center, HRI
+
+JOSHI HOSPITAL & DIALYSIS CENTRE, JHS
+
+KOLHAPUR CANCER CENTRE, KCC
+
+KPC multispecialty hospital PVT LTD, KPA
+
+Kolhapur Institute of Orthopaedics and Trauma, KIO
+
+Late Kedari Redekar Hospital, LTE
+
+etc.
+
+These must come from the DATABASE/API, not a hardcoded frontend array.
+
+============================================================
+32. SECOND TEST
+============================================================
+
+State:
+Maharashtra
+
+District:
+Pune
+
+Results should come from the imported database.
+
+The supplied data contains examples including:
+
+Apex Hospital
+Attharva accident hospital
+Bharati Hospital and Research Center
+Care Multispecialty Hospital
+District Hospital Pune
+Galaxy Care Multispecialty Hospital
+Global Hospital & Research Institute
+Indrayani Hospital & Cancer Institute
+Noble Hospital
+Sassoon General Hospital Pune
+Yashwantrao Chavan Memorial Hospital
+
+Again:
+
+DATABASE → API → REACT
+
+NOT:
+
+REACT → HARDCODED DATA
+
+============================================================
+33. THIRD TEST
+============================================================
+
+Search:
+
+Jupiter
+
+Expected:
+
+Jupiter Hospital, JUP
+
+District:
+
+THANE
+
+This record exists in the supplied dataset.
+
+============================================================
+34. ERROR HANDLING
+============================================================
+
+If no hospital is found:
+
+show:
+
+"No hospitals found for this location."
+
+If scheme-specific mapping does not exist:
+
+show:
+
+"Scheme-specific hospital availability is not available in the supplied dataset."
+
+If coordinates are missing:
+
+show:
+
+"Map location unavailable for this hospital."
+
+Never show fake information.
+
+============================================================
+35. FINAL DELIVERABLE
+============================================================
+
+When finished, provide:
+
+A. Files created
+B. Files modified
+C. Database migrations
+D. Import command
+E. Number of hospital records imported
+F. Number of scheme records imported
+G. Number of districts
+H. Duplicate count
+I. Invalid record count
+J. API endpoints tested
+K. Frontend pages tested
+L. pytest result
+M. npm build result
+N. Any remaining limitations
+
+MOST IMPORTANT:
+
+DO NOT SAY "DONE" UNTIL YOU HAVE:
+
+1. Imported the supplied data.
+2. Queried the database.
+3. Tested the API.
+4. Tested the frontend.
+5. Confirmed actual hospital names appear.
+6. Confirmed actual scheme names appear.
+7. Confirmed district filtering works.
+8. Confirmed no fake values were introduced.
+
+============================================================
+FINAL ARCHITECTURE
+============================================================
+
+The final data flow should be:
+
+REAL SUPPLIED DATA
+        ↓
+IMPORT / VALIDATION
+        ↓
+SQLAlchemy DATABASE
+        ↓
+FASTAPI
+        ↓
+REACT + TYPESCRIPT
+        ↓
+CITIZEN
+
+For hospital navigation:
+
+User Location / Selection
+        ↓
+State
+        ↓
+District
+        ↓
+Taluka (ONLY IF VERIFIED)
+        ↓
+REAL HOSPITAL DATABASE
+        ↓
+Hospital Details
+        ↓
+Scheme Availability
+        ↓
+Map / Directions (ONLY IF VALID COORDINATES EXIST)
+
+For schemes:
+
+User Profile
+        ↓
+Verified Eligibility Rules
+        ↓
+REAL SCHEME DATABASE
+        ↓
+Explainable Recommendation
+        ↓
+Official/source information
+
+NEVER:
+
+Frontend hardcoded data
+        ↓
+Fake results
+
+NEVER:
+
+Hospital
+        ↓
+Assume all schemes
+
+NEVER:
+
+Missing coordinate
+        ↓
+Invent coordinate
+
+NEVER:
+
+Missing benefit
+        ↓
+Invent benefit
+
+NEVER:
+
+Missing eligibility rule
+        ↓
+Invent eligibility rule
+
+The objective is to turn my EXISTING project into a real-data-backed Healthcare Schemes + Hospital Navigator while preserving everything that already works.
+============================================================
+IMPORTANT NEW REQUIREMENT — REAL DATA API / DATA INGESTION
+============================================================
+
+I have realized that the existing project does NOT have a proper
+real external government API/data integration.
+
+I want you to add a proper DATA INTEGRATION ARCHITECTURE to the
+existing project.
+
+DO NOT simply hardcode the supplied JSON/CSV data into React.
+
+The architecture must be:
+
+AUTHORITATIVE GOVERNMENT SOURCE
+        ↓
+DATA INGESTION / API CLIENT
+        ↓
+VALIDATION + NORMALIZATION
+        ↓
+DATABASE
+        ↓
+FASTAPI REST API
+        ↓
+REACT FRONTEND
+
+============================================================
+1. FIRST AUDIT EXISTING API
+============================================================
+
+Before changing anything, inspect the existing backend.
+
+Identify:
+
+- existing FastAPI routes
+- SQLAlchemy models
+- database
+- seed scripts
+- external API clients
+- HTTP clients
+- environment variables
+- frontend API service
+- API base URL
+- CORS configuration
+
+Tell me whether the existing project currently connects to
+ANY external API.
+
+Do not assume it does.
+
+============================================================
+2. EXTERNAL DATA SOURCES
+============================================================
+
+Research which authoritative sources actually provide machine-readable
+data/API access for:
+
+A. Government healthcare schemes
+B. Empanelled hospitals
+C. Maharashtra districts
+D. Maharashtra talukas
+E. Hospital-scheme relationships
+F. Hospital coordinates
+G. Hospital availability, if an official live API exists
+
+IMPORTANT:
+
+Do NOT invent an API endpoint.
+
+Do NOT assume that a government website has a REST API simply because
+the website displays the data.
+
+If there is no public API, explicitly document:
+
+"No public API identified."
+
+Then use the official downloadable dataset / official published
+data as the ingestion source.
+
+============================================================
+3. API SOURCES VS OFFICIAL DATA SOURCES
+============================================================
+
+The application must support both:
+
+TYPE 1:
+Official API
+
+TYPE 2:
+Official downloadable dataset
+
+TYPE 3:
+Official published document/data
+
+TYPE 4:
+User-provided source dataset
+
+Store the source type.
+
+Example:
+
+source_type =
+"official_api"
+
+or
+
+"official_dataset"
+
+or
+
+"official_document"
+
+or
+
+"provided_dataset"
+
+============================================================
+4. SOURCE CONNECTOR ARCHITECTURE
+============================================================
+
+Create a clean backend structure such as:
+
+backend/
+    app/
+        api/
+        models/
+        schemas/
+        services/
+        integrations/
+            government/
+                pmjay.py
+                mjpjay.py
+                nhm.py
+                locations.py
+        ingestion/
+            hospitals.py
+            schemes.py
+            locations.py
+        utils/
+            normalization.py
+            provenance.py
+
+Use the existing project structure if it already has an equivalent.
+
+DO NOT create duplicate architecture unnecessarily.
+
+============================================================
+5. HTTP CLIENT
+============================================================
+
+If an official API is actually available, use a proper HTTP client.
+
+For example:
+
+httpx
+
+with:
+
+- timeout
+- retry
+- error handling
+- response validation
+- logging
+- rate limiting where necessary
+
+Do NOT make uncontrolled requests.
+
+============================================================
+6. ENVIRONMENT VARIABLES
+============================================================
+
+Any API URL or API key must be configurable.
+
+Use:
+
+.env
+
+Example:
+
+GOVERNMENT_API_BASE_URL=
+GOVERNMENT_API_KEY=
+
+Never hardcode secrets.
+
+Never commit API keys.
+
+If an API does not require authentication, document that.
+
+============================================================
+7. API DATA VALIDATION
+============================================================
+
+Every external response must be validated before entering the database.
+
+Pipeline:
+
+External response
+        ↓
+Pydantic validation
+        ↓
+Normalization
+        ↓
+Duplicate detection
+        ↓
+Database upsert
+
+Invalid records must be logged rather than silently inserted.
+
+============================================================
+8. DO NOT DELETE THE SUPPLIED REAL DATA
+============================================================
+
+The supplied hospital dataset:
+
+Pasted text (2).txt
+
+and scheme dataset:
+
+Pasted markdown.md
+
+must remain usable.
+
+Treat them as initial source datasets.
+
+If a future official API/dataset provides newer information:
+
+official current source
+        ↓
+update database
+
+The original source provenance must remain recorded.
+
+============================================================
+9. DATA SOURCE TABLE
+============================================================
+
+Create a Source model/table if necessary.
+
+Fields:
+
+id
+name
+organization
+source_type
+url
+description
+last_checked_at
+status
+
+Example:
+
+name:
+"MJPJAY Hospital Directory"
+
+organization:
+"Government of Maharashtra"
+
+source_type:
+"official_dataset"
+
+url:
+official source URL
+
+============================================================
+10. INGESTION LOG
+============================================================
+
+Create an ingestion log.
+
+Fields:
+
+id
+source_id
+started_at
+completed_at
+status
+records_found
+records_created
+records_updated
+records_skipped
+records_failed
+error_message
+
+This allows the Admin panel to show:
+
+Last successful import
+Records imported
+Records updated
+Records failed
+
+============================================================
+11. UPSERT
+============================================================
+
+Do NOT insert duplicate records every time the ingestion runs.
+
+Use UPSERT logic.
+
+For hospitals:
+
+source_id + source_record_id
+
+should preferably identify the source record.
+
+For schemes:
+
+source_id + source_record_id
+
+Use appropriate unique constraints.
+
+============================================================
+12. DATA REFRESH
+============================================================
+
+Add an admin action:
+
+"Refresh Data"
+
+The system should:
+
+1. Contact the configured source/API
+2. Download/fetch data
+3. Validate
+4. Normalize
+5. Compare with database
+6. Update changed records
+7. Add new records
+8. Flag removed/deactivated records
+9. Record ingestion log
+
+Do NOT delete records blindly when they disappear from a source.
+
+Mark them inactive and record the last-seen date.
+
+============================================================
+13. IMPORTANT — NO FAKE LIVE DATA
+============================================================
+
+If the source does NOT provide live data:
+
+DO NOT display:
+
+"Live"
+
+"Real-time"
+
+"Updated just now"
+
+Instead display:
+
+"Last updated: DATE"
+
+and
+
+"Source: SOURCE NAME"
+
+============================================================
+14. HOSPITAL-SCHEME DATA
+============================================================
+
+Do NOT infer hospital-scheme relationships.
+
+If a real source provides:
+
+Hospital A → PM-JAY
+
+create:
+
+HospitalScheme(
+    hospital_id=A,
+    scheme_id=PMJAY,
+    status=empanelled,
+    source_id=...
+)
+
+If no source provides this relationship:
+
+do not create it.
+
+Display:
+
+"Scheme-specific empanelment data unavailable."
+
+============================================================
+15. LOCATION DATA
+============================================================
+
+Use authoritative location data where possible.
+
+Hierarchy:
+
+India
+ ↓
+Maharashtra
+ ↓
+District
+ ↓
+Taluka
+
+Do not generate this hierarchy from hospital names.
+
+Hospital district:
+
+SOURCE DATA
+
+Taluka:
+
+ONLY if verified from a location source.
+
+============================================================
+16. GEOCODING
+============================================================
+
+Do not fake coordinates.
+
+If an official/authoritative coordinate source exists,
+create a geocoding integration.
+
+Store:
+
+latitude
+longitude
+coordinate_source
+coordinate_verified_at
+
+If no reliable coordinate exists:
+
+latitude = NULL
+longitude = NULL
+
+The frontend must handle this gracefully.
+
+============================================================
+17. FRONTEND API ARCHITECTURE
+============================================================
+
+React must NEVER directly depend on a government API.
+
+Use:
+
+React
+ ↓
+FastAPI
+ ↓
+Database
+ ↓
+Ingestion Service
+ ↓
+Government source
+
+This provides:
+
+- security
+- caching
+- validation
+- consistent response format
+- source provenance
+- easier API changes
+
+============================================================
+18. FASTAPI RESPONSE
+============================================================
+
+Example hospital response:
+
+{
+    "id": 123,
+    "name": "Jupiter Hospital, JUP",
+    "state": "Maharashtra",
+    "district": "THANE",
+    "taluka": null,
+    "latitude": null,
+    "longitude": null,
+    "source": {
+        "name": "Provided hospital dataset",
+        "type": "provided_dataset",
+        "last_verified": "YYYY-MM-DD"
+    }
+}
+
+Do not return:
+
+"string"
+
+for actual records.
+
+============================================================
+19. API STATUS ENDPOINT
+============================================================
+
+Add:
+
+GET /api/data-sources
+
+GET /api/data-sources/status
+
+GET /api/ingestion/status
+
+These should show:
+
+source
+status
+last successful sync
+records
+errors
+
+============================================================
+20. ADMIN DATA REFRESH
+============================================================
+
+Add Admin page:
+
+DATA SOURCES
+
+---------------------------------
+MJPJAY
+Government of Maharashtra
+
+Status:
+Connected / Dataset / Unavailable
+
+Last Updated:
+DATE
+
+Records:
+XXXX
+
+[Refresh]
+---------------------------------
+
+PM-JAY
+
+Status:
+...
+
+[Refresh]
+---------------------------------
+
+Hospital Dataset
+
+Status:
+Imported
+
+Records:
+XXXX
+
+[Refresh]
+---------------------------------
+
+============================================================
+21. SOURCE FAILURE
+============================================================
+
+If an external API fails:
+
+DO NOT make the entire website fail.
+
+Continue serving the last successful database snapshot.
+
+Show:
+
+"Source temporarily unavailable.
+Showing last successfully synchronized data."
+
+This is extremely important.
+
+============================================================
+22. CACHING
+============================================================
+
+Do not call external government sources every time a citizen
+opens a page.
+
+Use:
+
+External source
+      ↓
+Periodic ingestion
+      ↓
+Database/cache
+      ↓
+FastAPI
+      ↓
+Frontend
+
+The citizen should normally receive data from our database.
+
+============================================================
+23. SCHEDULED REFRESH
+============================================================
+
+If appropriate, implement a scheduled ingestion job.
+
+For example:
+
+daily
+
+or
+
+weekly
+
+depending on the source.
+
+Do not refresh excessively.
+
+The admin must still have a manual:
+
+"Refresh Now"
+
+option.
+
+============================================================
+24. DATA CHANGE DETECTION
+============================================================
+
+When refreshed, detect:
+
+New hospital
+Changed hospital name
+Changed district
+Changed empanelment
+Removed/deactivated hospital
+New scheme
+Changed scheme information
+
+Show these in the Admin data-quality page.
+
+============================================================
+25. AUDIT TRAIL
+============================================================
+
+When a factual field changes, record:
+
+old value
+new value
+source
+changed_at
+
+This makes the system explainable and auditable.
+
+============================================================
+26. IMPORTANT LIMITATION
+============================================================
+
+Do NOT claim that the application has:
+
+"Real-time government API integration"
+
+unless an actual working government API has been implemented and
+tested.
+
+If the authoritative source only provides downloadable data,
+call it:
+
+"Official dataset integration"
+
+If the source is a supplied file,
+call it:
+
+"Source dataset integration"
+
+Be technically honest.
+
+============================================================
+27. FINAL TEST
+============================================================
+
+After implementation demonstrate:
+
+SOURCE
+ ↓
+INGESTION
+ ↓
+DATABASE
+ ↓
+FASTAPI
+ ↓
+FRONTEND
+
+Test:
+
+GET /api/schemes
+
+GET /api/hospitals
+
+GET /api/hospitals?district=KOLHAPUR
+
+GET /api/data-sources/status
+
+GET /api/ingestion/status
+
+Then verify that the frontend displays the same database records.
+
+============================================================
+28. FINAL REPORT
+============================================================
+
+Tell me:
+
+1. Does the project now have external API integration?
+2. Which external APIs actually exist?
+3. Which sources are datasets instead of APIs?
+4. Which data comes from my supplied files?
+5. Which data comes from official sources?
+6. How is data refreshed?
+7. How is source provenance stored?
+8. How many records were imported?
+9. How many records were updated?
+10. How many failed?
+11. Which fields remain unavailable?
+12. Which features are calculated locally?
+13. Which features depend on external sources?
+
+DO NOT claim an API exists unless you actually connected to it
+and successfully tested it.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-08-31T00:14:22+05:30.
+</ADDITIONAL_METADATA>

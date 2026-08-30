@@ -1,0 +1,2604 @@
+{
+  "empanelled_hospitals": [
+    {
+      "id": 1,
+      "hospital_name": "Amrutvahini rural hospital, ARH",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 2,
+      "hospital_name": "Anand Hospital, Ahmednagar",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 3,
+      "hospital_name": "Anandrishiji Hospital & Medical Research Center",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 4,
+      "hospital_name": "Chiranjeev Hospital, Sangamner",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 5,
+      "hospital_name": "Dr. Vikhe Patil Memorial Hospital, Ahmednagar",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 6,
+      "hospital_name": "Godavari Foundation Hospital, Kopargaon",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 7,
+      "hospital_name": "Pravara Rural Hospital, Loni",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 8,
+      "hospital_name": "Saideep Super Speciality Hospital, Ahmednagar",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 9,
+      "hospital_name": "Sai Baba Hospital, Shirdi",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 10,
+      "hospital_name": "Shri Saibaba Sansthan Trust Hospital, Shirdi",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 11,
+      "hospital_name": "Civil Hospital, Ahmednagar",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 12,
+      "hospital_name": "Niramay Hospital, Rahuri",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 13,
+      "hospital_name": "Sanjeevani Hospital, Kopargaon",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 14,
+      "hospital_name": "Mauli Hospital, Nevasa",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 15,
+      "hospital_name": "Ganga Superspeciality Hospital, Ahmednagar",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 16,
+      "hospital_name": "Kopargaon Taluka Co-operative Hospital, Kopargaon",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 17,
+      "hospital_name": "Shraddha Hospital, Shrigonda",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 18,
+      "hospital_name": "Navjeevan Hospital, Shevgaon",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 19,
+      "hospital_name": "Parner Rural Hospital, Parner",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 20,
+      "hospital_name": "Akole Rural Hospital, Akole",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 21,
+      "hospital_name": "Jamkhed Rural Hospital, Jamkhed",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 22,
+      "hospital_name": "Karjat Rural Hospital, Karjat",
+      "district": "AHMADNAGAR"
+    },
+    {
+      "id": 23,
+      "hospital_name": "Akola Criticare Hospital",
+      "district": "AKOLA"
+    },
+    {
+      "id": 24,
+      "hospital_name": "Apex Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 25,
+      "hospital_name": "Civil Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 26,
+      "hospital_name": "Icon Hospital & Cardiac Centre, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 27,
+      "hospital_name": "Ozone Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 28,
+      "hospital_name": "Dr. Panjabrao Deshmukh Hospital Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 29,
+      "hospital_name": "Sant Tukaram Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 30,
+      "hospital_name": "GMC & Super Speciality Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 31,
+      "hospital_name": "Mundhada Multi Speciality Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 32,
+      "hospital_name": "Shri Balaji Multispeciality Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 33,
+      "hospital_name": "Sanjeevani Hospital, Akot",
+      "district": "AKOLA"
+    },
+    {
+      "id": 34,
+      "hospital_name": "Aadarsh Hospital, Murtizapur",
+      "district": "AKOLA"
+    },
+    {
+      "id": 35,
+      "hospital_name": "Balapur Rural Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 36,
+      "hospital_name": "Barshitakli Rural Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 37,
+      "hospital_name": "Patur Rural Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 38,
+      "hospital_name": "Telhara Rural Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 39,
+      "hospital_name": "Care Multi Speciality Hospital, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 40,
+      "hospital_name": "Dr. Hedgewar Rugnalaya, Akola",
+      "district": "AKOLA"
+    },
+    {
+      "id": 41,
+      "hospital_name": "Amravati Super Speciality Hospital",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 42,
+      "hospital_name": "Dr. Panjabrao Deshmukh Memorial Medical College Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 43,
+      "hospital_name": "Hi-Tech Multispeciality Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 44,
+      "hospital_name": "Radiant Superspecialty Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 45,
+      "hospital_name": "District General Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 46,
+      "hospital_name": "Best Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 47,
+      "hospital_name": "Suyash Multispeciality Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 48,
+      "hospital_name": "Dhamangaon Rural Hospital",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 49,
+      "hospital_name": "Achalpur Sub-District Hospital",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 50,
+      "hospital_name": "Riddhi Hospital, Morshi",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 51,
+      "hospital_name": "Chandur Railway Rural Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 52,
+      "hospital_name": "Chandur Bazar Rural Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 53,
+      "hospital_name": "Warud Sub-District Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 54,
+      "hospital_name": "Dharni Sub-District Hospital (Melghat), Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 55,
+      "hospital_name": "Chikhaldara Rural Hospital (Melghat), Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 56,
+      "hospital_name": "Nandgaon Khandeshwar Rural Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 57,
+      "hospital_name": "Tiwas Rural Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 58,
+      "hospital_name": "Anjangaon Surji Sub-District Hospital, Amravati",
+      "district": "AMRAVATI"
+    },
+    {
+      "id": 59,
+      "hospital_name": "Aurangabad Institute of Medical Sciences (AIMS)",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 60,
+      "hospital_name": "Ciigma Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 61,
+      "hospital_name": "Dhoot Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 62,
+      "hospital_name": "MGM Medical College & Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 63,
+      "hospital_name": "Seth Nandlal Dhoot Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 64,
+      "hospital_name": "United CIIGMA Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 65,
+      "hospital_name": "Government Medical College and Hospital (GMC), Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 66,
+      "hospital_name": "Kamalnayan Bajaj Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 67,
+      "hospital_name": "Hedgewar Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 68,
+      "hospital_name": "Apex Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 69,
+      "hospital_name": "Asian Super Speciality Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 70,
+      "hospital_name": "District Hospital, Chhatrapati Sambhajinagar",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 71,
+      "hospital_name": "Vaijapur Sub-District Hospital",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 72,
+      "hospital_name": "Kannad Rural Hospital",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 73,
+      "hospital_name": "Gangapur Sub-District Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 74,
+      "hospital_name": "Paithan Sub-District Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 75,
+      "hospital_name": "Sillod Sub-District Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 76,
+      "hospital_name": "Phulambri Rural Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 77,
+      "hospital_name": "Khuldabad Rural Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 78,
+      "hospital_name": "Sanjeevani Hospital, Waluj MIDC Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 79,
+      "hospital_name": "Ciigma Women Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 80,
+      "hospital_name": "Shri Sai Hospital, Aurangabad",
+      "district": "AURANGABAD"
+    },
+    {
+      "id": 81,
+      "hospital_name": "Civil Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 82,
+      "hospital_name": "Swami Ramanand Teerth Rural Govt Medical College, Ambajogai",
+      "district": "BEED"
+    },
+    {
+      "id": 83,
+      "hospital_name": "Sparsh Superspeciality Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 84,
+      "hospital_name": "Adarsh Hospital, Parli Vaijnath",
+      "district": "BEED"
+    },
+    {
+      "id": 85,
+      "hospital_name": "Dhanwantari Hospital, Majalgaon",
+      "district": "BEED"
+    },
+    {
+      "id": 86,
+      "hospital_name": "Shree Hospital, Georai",
+      "district": "BEED"
+    },
+    {
+      "id": 87,
+      "hospital_name": "Saraswati Hospital, Ambajogai",
+      "district": "BEED"
+    },
+    {
+      "id": 88,
+      "hospital_name": "Ashwini Multispeciality Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 89,
+      "hospital_name": "Ashti Rural Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 90,
+      "hospital_name": "Patoda Rural Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 91,
+      "hospital_name": "Shirur Kasar Rural Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 92,
+      "hospital_name": "Wadwani Rural Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 93,
+      "hospital_name": "Kaij Sub-District Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 94,
+      "hospital_name": "Dharur Rural Hospital, Beed",
+      "district": "BEED"
+    },
+    {
+      "id": 95,
+      "hospital_name": "District General Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 96,
+      "hospital_name": "Life Line Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 97,
+      "hospital_name": "Sub-District Hospital, Tumsar",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 98,
+      "hospital_name": "Sub-District Hospital, Sakoli",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 99,
+      "hospital_name": "Sai Krupa Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 100,
+      "hospital_name": "Karemore Multispeciality Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 101,
+      "hospital_name": "Pauni Rural Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 102,
+      "hospital_name": "Mohadi Rural Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 103,
+      "hospital_name": "Lakhani Rural Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 104,
+      "hospital_name": "Lakhandur Rural Hospital, Bhandara",
+      "district": "BHANDARA"
+    },
+    {
+      "id": 105,
+      "hospital_name": "District Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 106,
+      "hospital_name": "Sub-District Hospital, Khamgaon",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 107,
+      "hospital_name": "Shri Balaji Hospital, Malkapur",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 108,
+      "hospital_name": "Chikhli Rural Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 109,
+      "hospital_name": "Mehkar Multispeciality Hospital",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 110,
+      "hospital_name": "Shegaon Sansthan Medical Centre, Shegaon",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 111,
+      "hospital_name": "Shree Gajanan Hospital, Jalgaon Jamod",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 112,
+      "hospital_name": "Deulgaon Raja Rural Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 113,
+      "hospital_name": "Sindkhed Raja Rural Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 114,
+      "hospital_name": "Lonar Rural Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 115,
+      "hospital_name": "Motala Rural Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 116,
+      "hospital_name": "Sangrampur Rural Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 117,
+      "hospital_name": "Nandura Sub-District Hospital, Buldhana",
+      "district": "BULDHANA"
+    },
+    {
+      "id": 118,
+      "hospital_name": "Government Medical College & Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 119,
+      "hospital_name": "District Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 120,
+      "hospital_name": "Christ Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 121,
+      "hospital_name": "City Care Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 122,
+      "hospital_name": "Sub-District Hospital, Ballarpur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 123,
+      "hospital_name": "Sub-District Hospital, Warora",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 124,
+      "hospital_name": "Bramhapuri Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 125,
+      "hospital_name": "Sanjeevani Hospital, Rajura",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 126,
+      "hospital_name": "Bhadrawati Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 127,
+      "hospital_name": "Chimur Sub-District Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 128,
+      "hospital_name": "Nagbhid Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 129,
+      "hospital_name": "Sindewahi Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 130,
+      "hospital_name": "Mul Sub-District Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 131,
+      "hospital_name": "Pombhurna Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 132,
+      "hospital_name": "Gondpipri Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 133,
+      "hospital_name": "Korpana Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 134,
+      "hospital_name": "Jiwati Rural Hospital, Chandrapur",
+      "district": "CHANDRAPUR"
+    },
+    {
+      "id": 135,
+      "hospital_name": "Shri Bhausaheb Hire Government Medical College, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 136,
+      "hospital_name": "District Civil Hospital, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 137,
+      "hospital_name": "Jawahar Medical Foundation Annasaheb Chudaman Patil Hospital, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 138,
+      "hospital_name": "Sub-District Hospital, Shirpur",
+      "district": "DHULE"
+    },
+    {
+      "id": 139,
+      "hospital_name": "Pawar Multispeciality Hospital, Dondaicha",
+      "district": "DHULE"
+    },
+    {
+      "id": 140,
+      "hospital_name": "Navjeevan Hospital, Sakri",
+      "district": "DHULE"
+    },
+    {
+      "id": 141,
+      "hospital_name": "Dhule Critical Care Centre",
+      "district": "DHULE"
+    },
+    {
+      "id": 142,
+      "hospital_name": "Sindkheda Rural Hospital, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 143,
+      "hospital_name": "Kusumba Rural Hospital, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 144,
+      "hospital_name": "Songir Rural Hospital, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 145,
+      "hospital_name": "Thalner Rural Hospital, Dhule",
+      "district": "DHULE"
+    },
+    {
+      "id": 146,
+      "hospital_name": "Government Medical College & General Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 147,
+      "hospital_name": "Godavari Foundation Medical College & Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 148,
+      "hospital_name": "Dr. Ulhas Patil Medical College and Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 149,
+      "hospital_name": "District Civil Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 150,
+      "hospital_name": "Sub-District Hospital, Bhusawal",
+      "district": "JALGAON"
+    },
+    {
+      "id": 151,
+      "hospital_name": "Ashoka Multispeciality Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 152,
+      "hospital_name": "Siddheshwar Hospital, Chalisgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 153,
+      "hospital_name": "Amalner Rural Hospital",
+      "district": "JALGAON"
+    },
+    {
+      "id": 154,
+      "hospital_name": "Pachora Sub-District Hospital",
+      "district": "JALGAON"
+    },
+    {
+      "id": 155,
+      "hospital_name": "Jamner Critical Care Centre",
+      "district": "JALGAON"
+    },
+    {
+      "id": 156,
+      "hospital_name": "Erandol Rural Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 157,
+      "hospital_name": "Dharangaon Rural Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 158,
+      "hospital_name": "Parola Sub-District Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 159,
+      "hospital_name": "Yawal Rural Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 160,
+      "hospital_name": "Raver Sub-District Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 161,
+      "hospital_name": "Muktainagar Rural Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 162,
+      "hospital_name": "Bodwad Rural Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 163,
+      "hospital_name": "Bhadgaon Rural Hospital, Jalgaon",
+      "district": "JALGAON"
+    },
+    {
+      "id": 164,
+      "hospital_name": "District Civil Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 165,
+      "hospital_name": "Mission Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 166,
+      "hospital_name": "Deepak Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 167,
+      "hospital_name": "Sub-District Hospital, Partur",
+      "district": "JALNA"
+    },
+    {
+      "id": 168,
+      "hospital_name": "Ambad Rural Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 169,
+      "hospital_name": "Bhokardan Rural Hospital",
+      "district": "JALNA"
+    },
+    {
+      "id": 170,
+      "hospital_name": "Sanjeevani Critical Care Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 171,
+      "hospital_name": "Kailash Cancer Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 172,
+      "hospital_name": "Badnapur Rural Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 173,
+      "hospital_name": "Ghansawangi Rural Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 174,
+      "hospital_name": "Mantha Rural Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 175,
+      "hospital_name": "Jafrabad Rural Hospital, Jalna",
+      "district": "JALNA"
+    },
+    {
+      "id": 176,
+      "hospital_name": "APPLE HOSPITALS AND RESEARCH INSTITUTE LTD, ARI",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 177,
+      "hospital_name": "Alliance multispecialty hospital (LLP), AMP",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 178,
+      "hospital_name": "Athaayu Multispecialty hospital, AMU",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 179,
+      "hospital_name": "Contacare eye hospital, VEC",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 180,
+      "hospital_name": "Diamond superspecialty hospital, DSP",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 181,
+      "hospital_name": "Dr. D. Y. Patil Medical College, Hospital & Research Institute, DYR",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 182,
+      "hospital_name": "Hattarki Hospital, Gadhinglaj, HHG",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 183,
+      "hospital_name": "Hridaya Multi-Speciality Hospital & Research Center, HRI",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 184,
+      "hospital_name": "JOSHI HOSPITAL & DIALYSIS CENTRE, JHS",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 185,
+      "hospital_name": "KOLHAPUR CANCER CENTRE, KCC",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 186,
+      "hospital_name": "KPC multispecialty hospital PVT LTD, KPA",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 187,
+      "hospital_name": "Kolhapur Institute of Orthopaedics and Trauma, KIO",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 188,
+      "hospital_name": "Late Kedari Redekar Hospital, LTE",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 189,
+      "hospital_name": "Chhatrapati Pramila Raje (CPR) General Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 190,
+      "hospital_name": "Aster Aadhar Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 191,
+      "hospital_name": "Sahyadri Super Speciality Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 192,
+      "hospital_name": "Swastik Hospital & Research Centre, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 193,
+      "hospital_name": "Sub-District Hospital, Ichalkaranji",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 194,
+      "hospital_name": "Sub-District Hospital, Gadhinglaj",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 195,
+      "hospital_name": "Seva Hospital, Kagal",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 196,
+      "hospital_name": "Shahu Multispeciality Hospital, Jaysingpur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 197,
+      "hospital_name": "Warananagar Rural Hospital, Panhala",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 198,
+      "hospital_name": "Radhanagari Rural Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 199,
+      "hospital_name": "Bhudargad Rural Hospital (Gargoti), Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 200,
+      "hospital_name": "Ajara Rural Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 201,
+      "hospital_name": "Chandgad Sub-District Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 202,
+      "hospital_name": "Bavalekar Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 203,
+      "hospital_name": "Apple Saraswati Multispecialty Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 204,
+      "hospital_name": "Shirol Rural Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 205,
+      "hospital_name": "Gaganbawda Rural Hospital, Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 206,
+      "hospital_name": "Shahuwadi Rural Hospital (Malkapur), Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 207,
+      "hospital_name": "Sanjeevani Hospital, Ichalkaranji Kolhapur",
+      "district": "KOLHAPUR"
+    },
+    {
+      "id": 208,
+      "hospital_name": "Vilasrao Deshmukh Government Institute of Medical Sciences, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 209,
+      "hospital_name": "MIMSR Medical College & Yashwantrao Chavan Rural Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 210,
+      "hospital_name": "District Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 211,
+      "hospital_name": "Sub-District Hospital, Udgir",
+      "district": "LATUR"
+    },
+    {
+      "id": 212,
+      "hospital_name": "Sub-District Hospital, Nilanga",
+      "district": "LATUR"
+    },
+    {
+      "id": 213,
+      "hospital_name": "Apex Superspeciality Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 214,
+      "hospital_name": "Vivekanand Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 215,
+      "hospital_name": "Deshmukh Critical Care Hospital, Ahmedpur",
+      "district": "LATUR"
+    },
+    {
+      "id": 216,
+      "hospital_name": "Ausa Sub-District Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 217,
+      "hospital_name": "Chakur Rural Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 218,
+      "hospital_name": "Renapur Rural Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 219,
+      "hospital_name": "Shirur Anantpal Rural Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 220,
+      "hospital_name": "Jalkot Rural Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 221,
+      "hospital_name": "Deoni Rural Hospital, Latur",
+      "district": "LATUR"
+    },
+    {
+      "id": 222,
+      "hospital_name": "King Edward Memorial (KEM) Hospital, Parel",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 223,
+      "hospital_name": "Lokmanya Tilak Municipal General (Sion) Hospital",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 224,
+      "hospital_name": "Topiwala National Medical College & Nair Hospital",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 225,
+      "hospital_name": "Sir J.J. Group of Hospitals, Byculla",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 226,
+      "hospital_name": "Bombay Hospital & Medical Research Centre, Marine Lines",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 227,
+      "hospital_name": "Lilavati Hospital & Research Centre, Bandra",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 228,
+      "hospital_name": "Dr. Balabhai Nanavati Hospital, Vile Parle",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 229,
+      "hospital_name": "Tata Memorial Centre & Cancer Research Institute, Parel",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 230,
+      "hospital_name": "Sir H. N. Reliance Foundation Hospital, Girgaon",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 231,
+      "hospital_name": "P. D. Hinduja National Hospital, Mahim",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 232,
+      "hospital_name": "Dr. R. N. Cooper Municipal General Hospital, Juhu",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 233,
+      "hospital_name": "Saifee Hospital, Charni Road",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 234,
+      "hospital_name": "Global Hospitals, Parel",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 235,
+      "hospital_name": "Kohinoor Hospital, Kurla",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 236,
+      "hospital_name": "S. L. Raheja Hospital (A Fortis Associate), Mahim",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 237,
+      "hospital_name": "Gokuldas Tejpal (G.T.) Hospital, Fort",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 238,
+      "hospital_name": "Bhabha Municipal General Hospital, Bandra",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 239,
+      "hospital_name": "Shatabdi Hospital, Kandivali",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 240,
+      "hospital_name": "Rajawadi Municipal Hospital, Ghatkopar",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 241,
+      "hospital_name": "K. J. Somaiya Medical College and Research Centre, Sion",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 242,
+      "hospital_name": "B. Y. L. Nair Charitable Hospital, Mumbai Central",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 243,
+      "hospital_name": "Casturba Hospital for Infectious Diseases, Chinchpokli",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 244,
+      "hospital_name": "St. George Hospital, Fort",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 245,
+      "hospital_name": "Cama & Albless Hospital, Fort",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 246,
+      "hospital_name": "Bhabha Municipal General Hospital, Kurla",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 247,
+      "hospital_name": "V. N. Desai Municipal General Hospital, Santacruz",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 248,
+      "hospital_name": "M. W. Desai Municipal General Hospital, Malad",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 249,
+      "hospital_name": "S. K. Patil Municipal General Hospital, Malad",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 250,
+      "hospital_name": "Bhagwati Municipal Hospital, Borivali",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 251,
+      "hospital_name": "Pandit Madan Mohan Malviya Hospital, Govandi",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 252,
+      "hospital_name": "M. T. Agarwal Municipal Hospital, Mulund",
+      "district": "MUMBAI"
+    },
+    {
+      "id": 253,
+      "hospital_name": "All India Institute of Medical Sciences (AIIMS), Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 254,
+      "hospital_name": "Government Medical College and Hospital (GMCH), Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 255,
+      "hospital_name": "Indira Gandhi Government Medical College & Hospital (IGGMCH), Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 256,
+      "hospital_name": "Care Hospitals, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 257,
+      "hospital_name": "Orange City Hospital & Research Institute, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 258,
+      "hospital_name": "Wockhardt Super Speciality Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 259,
+      "hospital_name": "Kingsway Hospitals, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 260,
+      "hospital_name": "Alexis Hospital (Zulekha Healthcare), Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 261,
+      "hospital_name": "National Cancer Institute (NCI), Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 262,
+      "hospital_name": "Crescent Hospital & Heart Centre, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 263,
+      "hospital_name": "Shrikhande Hospital & Research Centre, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 264,
+      "hospital_name": "Sub-District Hospital, Kamthi",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 265,
+      "hospital_name": "Sub-District Hospital, Katol",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 266,
+      "hospital_name": "Sub-District Hospital, Umred",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 267,
+      "hospital_name": "Daga Memorial Government Women Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 268,
+      "hospital_name": "Regional Mental Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 269,
+      "hospital_name": "Hingna Rural Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 270,
+      "hospital_name": "Narkhed Rural Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 271,
+      "hospital_name": "Saoner Sub-District Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 272,
+      "hospital_name": "Parseoni Rural Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 273,
+      "hospital_name": "Ramtek Sub-District Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 274,
+      "hospital_name": "Mouda Rural Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 275,
+      "hospital_name": "Kuhi Rural Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 276,
+      "hospital_name": "Bhiwapur Rural Hospital, Nagpur",
+      "district": "NAGPUR"
+    },
+    {
+      "id": 277,
+      "hospital_name": "Dr. Shankarrao Chavan Government Medical College & Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 278,
+      "hospital_name": "District Civil Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 279,
+      "hospital_name": "Ashwini Multispeciality Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 280,
+      "hospital_name": "Lotus Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 281,
+      "hospital_name": "Sub-District Hospital, Degloor",
+      "district": "NANDED"
+    },
+    {
+      "id": 282,
+      "hospital_name": "Sub-District Hospital, Kinwat",
+      "district": "NANDED"
+    },
+    {
+      "id": 283,
+      "hospital_name": "Sub-District Hospital, Bhokar",
+      "district": "NANDED"
+    },
+    {
+      "id": 284,
+      "hospital_name": "Gurukrupa Critical Care Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 285,
+      "hospital_name": "Hadgaon Sub-District Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 286,
+      "hospital_name": "Himayatnagar Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 287,
+      "hospital_name": "Mahur Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 288,
+      "hospital_name": "Mudkhed Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 289,
+      "hospital_name": "Ardhapur Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 290,
+      "hospital_name": "Loha Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 291,
+      "hospital_name": "Kandhar Sub-District Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 292,
+      "hospital_name": "Mukhed Sub-District Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 293,
+      "hospital_name": "Naigaon Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 294,
+      "hospital_name": "Biloli Sub-District Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 295,
+      "hospital_name": "Dharmabad Sub-District Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 296,
+      "hospital_name": "Umri Rural Hospital, Nanded",
+      "district": "NANDED"
+    },
+    {
+      "id": 297,
+      "hospital_name": "District Civil Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 298,
+      "hospital_name": "Sub-District Hospital, Navapur",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 299,
+      "hospital_name": "Sub-District Hospital, Shahada",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 300,
+      "hospital_name": "Sub-District Hospital, Taloda",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 301,
+      "hospital_name": "Sub-District Hospital, Akkalkuwa",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 302,
+      "hospital_name": "Ashirwad Multispeciality Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 303,
+      "hospital_name": "Dhadgaon Rural Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 304,
+      "hospital_name": "Navapur Rural Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 305,
+      "hospital_name": "Shahada City General Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 306,
+      "hospital_name": "Taloda City Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 307,
+      "hospital_name": "Molgi Rural Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 308,
+      "hospital_name": "Khatgaon Rural Hospital, Nandurbar",
+      "district": "NANDURBAR"
+    },
+    {
+      "id": 309,
+      "hospital_name": "Apollo Hospitals, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 310,
+      "hospital_name": "District Civil Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 311,
+      "hospital_name": "Maharashtra University of Health Sciences Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 312,
+      "hospital_name": "Suyash Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 313,
+      "hospital_name": "Wockhardt Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 314,
+      "hospital_name": "Ashoka Medicover Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 315,
+      "hospital_name": "Sahyadri Super Speciality Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 316,
+      "hospital_name": "Sub-District Hospital, Malegaon",
+      "district": "NASHIK"
+    },
+    {
+      "id": 317,
+      "hospital_name": "General Hospital, Malegaon",
+      "district": "NASHIK"
+    },
+    {
+      "id": 318,
+      "hospital_name": "Sub-District Hospital, Niphad",
+      "district": "NASHIK"
+    },
+    {
+      "id": 319,
+      "hospital_name": "Sinnar Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 320,
+      "hospital_name": "Manmad Railway & Municipal Hospital",
+      "district": "NASHIK"
+    },
+    {
+      "id": 321,
+      "hospital_name": "Yeola Sub-District Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 322,
+      "hospital_name": "Satana Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 323,
+      "hospital_name": "Chandwad Sub-District Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 324,
+      "hospital_name": "Deola Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 325,
+      "hospital_name": "Dindori Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 326,
+      "hospital_name": "Igatpuri Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 327,
+      "hospital_name": "Kalwan Sub-District Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 328,
+      "hospital_name": "Nandgaon Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 329,
+      "hospital_name": "Peint Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 330,
+      "hospital_name": "Surgana Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 331,
+      "hospital_name": "Trimbakeshwar Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 332,
+      "hospital_name": "Girnare Rural Hospital, Nashik",
+      "district": "NASHIK"
+    },
+    {
+      "id": 333,
+      "hospital_name": "Government Medical College & District Hospital, Dharashiv (Osmanabad)",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 334,
+      "hospital_name": "Sub-District Hospital, Tuljapur",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 335,
+      "hospital_name": "Sub-District Hospital, Omerga",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 336,
+      "hospital_name": "Sub-District Hospital, Kalamb",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 337,
+      "hospital_name": "Sub-District Hospital, Bhum",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 338,
+      "hospital_name": "Apex Hospital, Dharashiv",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 339,
+      "hospital_name": "Balaji Critical Care Hospital, Omerga",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 340,
+      "hospital_name": "Paranda Rural Hospital, Osmanabad",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 341,
+      "hospital_name": "Lohara Rural Hospital, Osmanabad",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 342,
+      "hospital_name": "Washi Rural Hospital, Osmanabad",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 343,
+      "hospital_name": "Murum Rural Hospital, Osmanabad",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 344,
+      "hospital_name": "Naldurg Rural Hospital, Osmanabad",
+      "district": "OSMANABAD"
+    },
+    {
+      "id": 345,
+      "hospital_name": "Government Medical College & District Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 346,
+      "hospital_name": "Sub-District Hospital, Gangakhed",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 347,
+      "hospital_name": "Sub-District Hospital, Jintur",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 348,
+      "hospital_name": "Sub-District Hospital, Pathri",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 349,
+      "hospital_name": "Sub-District Hospital, Sailu",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 350,
+      "hospital_name": "Galaxy Multispeciality Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 351,
+      "hospital_name": "Sanjeevani Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 352,
+      "hospital_name": "Purna Rural Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 353,
+      "hospital_name": "Manwath Rural Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 354,
+      "hospital_name": "Sonpeth Rural Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 355,
+      "hospital_name": "Palam Rural Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 356,
+      "hospital_name": "Selu Sub-District Hospital, Parbhani",
+      "district": "PARBHANI"
+    },
+    {
+      "id": 357,
+      "hospital_name": "Apex Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 358,
+      "hospital_name": "Attharva accident hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 359,
+      "hospital_name": "Bharati Hospital and Research Center, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 360,
+      "hospital_name": "Care Multispecialty Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 361,
+      "hospital_name": "District Hospital, Pune (Aundh)",
+      "district": "PUNE"
+    },
+    {
+      "id": 362,
+      "hospital_name": "Galaxy Care Multispecialty Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 363,
+      "hospital_name": "Global Hospital & Research Institute, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 364,
+      "hospital_name": "Indrayani Hospital & Cancer Institute, Alandi Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 365,
+      "hospital_name": "Noble Hospital, Hadapsar Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 366,
+      "hospital_name": "Sassoon General Hospital & B. J. Medical College, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 367,
+      "hospital_name": "Yashwantrao Chavan Memorial Hospital (YCMH), Pimpri Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 368,
+      "hospital_name": "Sahyadri Super Speciality Hospital, Deccan Gymkhana Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 369,
+      "hospital_name": "Deenanath Mangeshkar Hospital and Research Center, Erandwane Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 370,
+      "hospital_name": "Ruby Hall Clinic, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 371,
+      "hospital_name": "Poona Hospital and Research Centre, Sadashiv Peth Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 372,
+      "hospital_name": "Sancheti Institute for Orthopaedics and Rehabilitation, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 373,
+      "hospital_name": "Inamdar Multispeciality Hospital, Fatima Nagar Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 374,
+      "hospital_name": "Command Hospital (Southern Command), Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 375,
+      "hospital_name": "Jehangir Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 376,
+      "hospital_name": "KEM Hospital & Research Centre, Rasta Peth Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 377,
+      "hospital_name": "Sub-District Hospital, Baramati",
+      "district": "PUNE"
+    },
+    {
+      "id": 378,
+      "hospital_name": "Government Medical College & General Hospital, Baramati",
+      "district": "PUNE"
+    },
+    {
+      "id": 379,
+      "hospital_name": "Sub-District Hospital, Manchar",
+      "district": "PUNE"
+    },
+    {
+      "id": 380,
+      "hospital_name": "Sub-District Hospital, Bhor",
+      "district": "PUNE"
+    },
+    {
+      "id": 381,
+      "hospital_name": "Talegaon General Hospital (MIMER), Talegaon Dabhade",
+      "district": "PUNE"
+    },
+    {
+      "id": 382,
+      "hospital_name": "Daund Sub-District Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 383,
+      "hospital_name": "Indapur Sub-District Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 384,
+      "hospital_name": "Shirur Sub-District Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 385,
+      "hospital_name": "Khed (Rajgurunagar) Sub-District Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 386,
+      "hospital_name": "Junnar Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 387,
+      "hospital_name": "Ambegaon (Ghodegaon) Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 388,
+      "hospital_name": "Maval (Vadgaon) Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 389,
+      "hospital_name": "Mulshi (Paud) Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 390,
+      "hospital_name": "Velhe Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 391,
+      "hospital_name": "Purandar (Saswad) Sub-District Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 392,
+      "hospital_name": "Alandi Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 393,
+      "hospital_name": "Loni Kalbhor Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 394,
+      "hospital_name": "Wagholi Rural Hospital, Pune",
+      "district": "PUNE"
+    },
+    {
+      "id": 395,
+      "hospital_name": "Government Medical College & Chhatrapati Shivaji Maharaj District Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 396,
+      "hospital_name": "Krishna Institute of Medical Sciences & Hospital, Karad Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 397,
+      "hospital_name": "Onkar Super Speciality Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 398,
+      "hospital_name": "Sub-District Hospital, Karad",
+      "district": "SATARA"
+    },
+    {
+      "id": 399,
+      "hospital_name": "Sub-District Hospital, Phaltan",
+      "district": "SATARA"
+    },
+    {
+      "id": 400,
+      "hospital_name": "Sub-District Hospital, Wai",
+      "district": "SATARA"
+    },
+    {
+      "id": 401,
+      "hospital_name": "Sub-District Hospital, Mahabaleshwar",
+      "district": "SATARA"
+    },
+    {
+      "id": 402,
+      "hospital_name": "Pratapsingh Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 403,
+      "hospital_name": "Sanjivani Hospital, Koregaon",
+      "district": "SATARA"
+    },
+    {
+      "id": 404,
+      "hospital_name": "Dahiwadi Rural Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 405,
+      "hospital_name": "Khandala Rural Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 406,
+      "hospital_name": "Koregaon Sub-District Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 407,
+      "hospital_name": "Patan Sub-District Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 408,
+      "hospital_name": "Jawali (Medha) Rural Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 409,
+      "hospital_name": "Khatav (Vaduj) Rural Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 410,
+      "hospital_name": "Man (Dahiwadi) Sub-District Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 411,
+      "hospital_name": "Shirwal Rural Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 412,
+      "hospital_name": "Lonand Rural Hospital, Satara",
+      "district": "SATARA"
+    },
+    {
+      "id": 413,
+      "hospital_name": "Government Medical College & District Hospital, Sindhudurgnagari (Oros)",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 414,
+      "hospital_name": "Sub-District Hospital, Kankavli",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 415,
+      "hospital_name": "Sub-District Hospital, Sawantwadi",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 416,
+      "hospital_name": "Sub-District Hospital, Vengurla",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 417,
+      "hospital_name": "Sub-District Hospital, Kudal",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 418,
+      "hospital_name": "Malvan Rural Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 419,
+      "hospital_name": "Devgad Rural Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 420,
+      "hospital_name": "Redkar Hospital & Research Centre, Malvan",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 421,
+      "hospital_name": "Vaibhavwadi Rural Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 422,
+      "hospital_name": "Dodamarg Rural Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 423,
+      "hospital_name": "Kudal Speciality Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 424,
+      "hospital_name": "Banda Rural Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 425,
+      "hospital_name": "Shiroda Rural Hospital, Sindhudurg",
+      "district": "SINDHUDURG"
+    },
+    {
+      "id": 426,
+      "hospital_name": "Dr. Vaishampayan Memorial Government Medical College & Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 427,
+      "hospital_name": "Ashwini Rural Medical College, Hospital and Research Centre, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 428,
+      "hospital_name": "District Civil Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 429,
+      "hospital_name": "Markandey Rugnalaya, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 430,
+      "hospital_name": "Yashodhara Super Speciality Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 431,
+      "hospital_name": "Sub-District Hospital, Pandharpur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 432,
+      "hospital_name": "Sub-District Hospital, Barshi",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 433,
+      "hospital_name": "Sub-District Hospital, Akkalkot",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 434,
+      "hospital_name": "Sub-District Hospital, Karmala",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 435,
+      "hospital_name": "Sub-District Hospital, Sangola",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 436,
+      "hospital_name": "Jagdale Mama Hospital, Barshi",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 437,
+      "hospital_name": "Ganga Superspeciality Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 438,
+      "hospital_name": "Madha Rural Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 439,
+      "hospital_name": "Karmala Sub-District Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 440,
+      "hospital_name": "Mohol Rural Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 441,
+      "hospital_name": "Malshiras Sub-District Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 442,
+      "hospital_name": "Mangalwedha Sub-District Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 443,
+      "hospital_name": "South Solapur (Mandrup) Rural Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 444,
+      "hospital_name": "North Solapur Rural Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 445,
+      "hospital_name": "Kurduvadi Rural Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 446,
+      "hospital_name": "Natepute Rural Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 447,
+      "hospital_name": "Akluj Critical Care Hospital, Solapur",
+      "district": "SOLAPUR"
+    },
+    {
+      "id": 448,
+      "hospital_name": "Jupiter Hospital, JUP",
+      "district": "THANE"
+    },
+    {
+      "id": 449,
+      "hospital_name": "Bethany Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 450,
+      "hospital_name": "District Civil Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 451,
+      "hospital_name": "Criticare Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 452,
+      "hospital_name": "Horizon Hospital, Naupada Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 453,
+      "hospital_name": "Kaushalya Medical Foundation Trust Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 454,
+      "hospital_name": "Vedant Hospital, Ghodbunder Road Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 455,
+      "hospital_name": "Chhatrapati Shivaji Maharaj Hospital, Kalwa Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 456,
+      "hospital_name": "Sub-District Hospital, Kalyan",
+      "district": "THANE"
+    },
+    {
+      "id": 457,
+      "hospital_name": "Rukminibai Municipal Hospital, Kalyan",
+      "district": "THANE"
+    },
+    {
+      "id": 458,
+      "hospital_name": "Sub-District Hospital, Ulhasnagar (Central Hospital)",
+      "district": "THANE"
+    },
+    {
+      "id": 459,
+      "hospital_name": "Shastri Nagar General Hospital, Dombivli",
+      "district": "THANE"
+    },
+    {
+      "id": 460,
+      "hospital_name": "Meera Hospital, Mira Road Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 461,
+      "hospital_name": "Bhakti Vedanta Hospital & Research Institute, Mira Road",
+      "district": "THANE"
+    },
+    {
+      "id": 462,
+      "hospital_name": "Sub-District Hospital, Shahapur",
+      "district": "THANE"
+    },
+    {
+      "id": 463,
+      "hospital_name": "Sub-District Hospital, Murbad",
+      "district": "THANE"
+    },
+    {
+      "id": 464,
+      "hospital_name": "Sub-District Hospital, Bhiwandi (Indira Gandhi Memorial)",
+      "district": "THANE"
+    },
+    {
+      "id": 465,
+      "hospital_name": "Ambarnath Sub-District Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 466,
+      "hospital_name": "Badlapur Sub-District Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 467,
+      "hospital_name": "Padgha Rural Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 468,
+      "hospital_name": "Tokawade Rural Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 469,
+      "hospital_name": "Bhiwandi Nizampur City Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 470,
+      "hospital_name": "Kalwa Municipal Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 471,
+      "hospital_name": "Wagle Estate ESIS Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 472,
+      "hospital_name": "Ulhasnagar ESIS Hospital, Thane",
+      "district": "THANE"
+    },
+    {
+      "id": 473,
+      "hospital_name": "Acharya Vinoba Bhave Rural Hospital & JNMC, Sawangi Meghe Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 474,
+      "hospital_name": "Kasturba Hospital, Mahatma Gandhi Institute of Medical Sciences, Sewagram Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 475,
+      "hospital_name": "District Civil Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 476,
+      "hospital_name": "Sub-District Hospital, Hinganghat",
+      "district": "WARDHA"
+    },
+    {
+      "id": 477,
+      "hospital_name": "Sub-District Hospital, Arvi",
+      "district": "WARDHA"
+    },
+    {
+      "id": 478,
+      "hospital_name": "Pullewar Multispeciality Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 479,
+      "hospital_name": "Pulgaon Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 480,
+      "hospital_name": "Karanja Ghadge Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 481,
+      "hospital_name": "Deoli Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 482,
+      "hospital_name": "Seloo Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 483,
+      "hospital_name": "Samudrapur Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 484,
+      "hospital_name": "Ashti Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 485,
+      "hospital_name": "Karanji Rural Hospital, Wardha",
+      "district": "WARDHA"
+    },
+    {
+      "id": 486,
+      "hospital_name": "District General Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 487,
+      "hospital_name": "Sub-District Hospital, Karanja Lad",
+      "district": "WASHIM"
+    },
+    {
+      "id": 488,
+      "hospital_name": "Sub-District Hospital, Risod",
+      "district": "WASHIM"
+    },
+    {
+      "id": 489,
+      "hospital_name": "Sub-District Hospital, Mangrulpir",
+      "district": "WASHIM"
+    },
+    {
+      "id": 490,
+      "hospital_name": "Aparna Hospital & Critical Care, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 491,
+      "hospital_name": "Manora Rural Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 492,
+      "hospital_name": "Malegaon Rural Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 493,
+      "hospital_name": "Malegaon Sub-District Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 494,
+      "hospital_name": "Shirpur Jain Rural Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 495,
+      "hospital_name": "Pardi Rural Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 496,
+      "hospital_name": "Kamargaon Rural Hospital, Washim",
+      "district": "WASHIM"
+    },
+    {
+      "id": 497,
+      "hospital_name": "Shri Vasantrao Naik Government Medical College & Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 498,
+      "hospital_name": "District Civil Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 499,
+      "hospital_name": "Criticare Hospital & Research Centre, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 500,
+      "hospital_name": "Life Line Multispeciality Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 501,
+      "hospital_name": "Spandan Critical Care Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 502,
+      "hospital_name": "Sub-District Hospital, Pusad",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 503,
+      "hospital_name": "Sub-District Hospital, Wani",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 504,
+      "hospital_name": "Sub-District Hospital, Pandharkawada (Kelapur)",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 505,
+      "hospital_name": "Sub-District Hospital, Umarkhed",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 506,
+      "hospital_name": "Sub-District Hospital, Darwha",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 507,
+      "hospital_name": "Ghuikhed Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 508,
+      "hospital_name": "Ghatanji Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 509,
+      "hospital_name": "Digras Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 510,
+      "hospital_name": "Arni Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 511,
+      "hospital_name": "Babhulgaon Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 512,
+      "hospital_name": "Kalamb Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 513,
+      "hospital_name": "Ralegaon Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 514,
+      "hospital_name": "Maregaon Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 515,
+      "hospital_name": "Zari Jamani Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 516,
+      "hospital_name": "Mahagaon Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 517,
+      "hospital_name": "Ner Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 518,
+      "hospital_name": "Runza Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 519,
+      "hospital_name": "Pohandul Rural Hospital, Yavatmal",
+      "district": "YAVATMAL"
+    },
+    {
+      "id": 520,
+      "hospital_name": "Yavatmal Criticare Centre, Yavatmal",
+      "district": "YAVATMAL"
+    }
+  ]
+}
