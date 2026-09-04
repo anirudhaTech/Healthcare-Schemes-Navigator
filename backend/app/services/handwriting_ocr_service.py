@@ -1,6 +1,6 @@
 from typing import Any, Dict, List
 
-from google.cloud import vision_v1p3beta1 as vision
+from google.cloud import vision_v1 as vision
 
 
 class HandwritingOCRService:
